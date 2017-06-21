@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Bank account information" section_id="edcf8a940f6332005fddcdbce1050ece" sys_domain="global" table="x_90286_mdm_vendor_vendor" version="3" view="F">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_account_type</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>f5cfca940f6332005fddcdbce1050e37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_account_holders_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>79cfca940f6332005fddcdbce1050e37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_bank_account_currency</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>f9cfca940f6332005fddcdbce1050e37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>7dcfca940f6332005fddcdbce1050e37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_name_of_bank</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>fdcfca940f6332005fddcdbce1050e37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_bank_account_number</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>71cfca940f6332005fddcdbce1050e38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_iban</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>f1cfca940f6332005fddcdbce1050e38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_routing_no_branch_code_bank_key</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>75cfca940f6332005fddcdbce1050e38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_swift_code</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:07</sys_created_on>
+            <sys_id>f5cfca940f6332005fddcdbce1050e38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Bank account information" display_value="Bank account information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="59cf8a940f6332005fddcdbce1050ec9">edcf8a940f6332005fddcdbce1050ece</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Bank account information</caption>
+            <header>false</header>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:49:05</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>edcf8a940f6332005fddcdbce1050ece</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Bank account information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="MDM Vendor" source="x_90286_mdm_vendor">73b83f660f1332005fddcdbce1050ef3</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="MDM Vendor">73b83f660f1332005fddcdbce1050ef3</sys_scope>
+            <sys_update_name>sys_ui_section_edcf8a940f6332005fddcdbce1050ece</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:49:05</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="F" name="F">59cf8a940f6332005fddcdbce1050ec9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

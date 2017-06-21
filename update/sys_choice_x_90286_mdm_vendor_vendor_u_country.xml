@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_country" table="x_90286_mdm_vendor_vendor" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_country</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Albania</label>
+            <language>en</language>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-15 09:30:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aacdccfe0f1332005fddcdbce1050e4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-15 09:30:18</sys_updated_on>
+            <value>009</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_country</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hungary</label>
+            <language>en</language>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-15 09:30:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6cdccfe0f1332005fddcdbce1050e50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-15 09:30:18</sys_updated_on>
+            <value>195</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_country</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>USA</label>
+            <language>en</language>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-15 09:30:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eecdccfe0f1332005fddcdbce1050e51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-15 09:30:18</sys_updated_on>
+            <value>456</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_country</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>United Kingdom</label>
+            <language>en</language>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-15 09:30:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2acdccfe0f1332005fddcdbce1050e53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-15 09:30:18</sys_updated_on>
+            <value>453</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_country</element>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-15 09:30:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>62cdccfe0f1332005fddcdbce1050e50</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>u_country</sys_name>
+            <sys_package display_value="MDM Vendor" source="x_90286_mdm_vendor">73b83f660f1332005fddcdbce1050ef3</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="MDM Vendor">73b83f660f1332005fddcdbce1050ef3</sys_scope>
+            <sys_update_name>sys_choice_x_90286_mdm_vendor_vendor_u_country</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-15 09:30:18</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

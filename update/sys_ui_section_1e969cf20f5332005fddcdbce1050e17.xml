@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Consultant personal information" section_id="1e969cf20f5332005fddcdbce1050e17" sys_domain="global" table="x_90286_mdm_vendor_vendor" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>9d8092d40f6332005fddcdbce1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <text>If former staff member ensure that DHR clearance is attached.</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_glide_start_date</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>958092d40f6332005fddcdbce1050e6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_gender</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>198092d40f6332005fddcdbce1050e6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_marital_status</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>998092d40f6332005fddcdbce1050e6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_date_of_birth</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>1d8092d40f6332005fddcdbce1050e6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_city_of_birth</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>9d8092d40f6332005fddcdbce1050e6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_country_of_birth</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>118092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>918092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_personnel_area</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>158092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_choice_40</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>958092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>9d8092d40f6332005fddcdbce1050e6a</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>198092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_former_staff_member</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>998092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_personnel_number</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-20 10:52:21</sys_created_on>
+            <sys_id>1d8092d40f6332005fddcdbce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consultant personal information" display_value="Consultant personal information" name="x_90286_mdm_vendor_vendor" sys_domain="global" view="Default view">1e969cf20f5332005fddcdbce1050e17</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-20 10:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Consultant personal information</caption>
+            <header>false</header>
+            <name>x_90286_mdm_vendor_vendor</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-15 10:08:47</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e969cf20f5332005fddcdbce1050e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Consultant personal information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="MDM Vendor" source="x_90286_mdm_vendor">73b83f660f1332005fddcdbce1050ef3</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="MDM Vendor">73b83f660f1332005fddcdbce1050ef3</sys_scope>
+            <sys_update_name>sys_ui_section_1e969cf20f5332005fddcdbce1050e17</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-15 10:08:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

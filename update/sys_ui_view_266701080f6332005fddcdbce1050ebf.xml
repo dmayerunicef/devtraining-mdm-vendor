@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>With_Order_test</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-19 10:54:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>266701080f6332005fddcdbce1050ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>With Order test</sys_name>
+        <sys_package display_value="MDM Vendor" source="x_90286_mdm_vendor">73b83f660f1332005fddcdbce1050ef3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MDM Vendor">73b83f660f1332005fddcdbce1050ef3</sys_scope>
+        <sys_update_name>sys_ui_view_266701080f6332005fddcdbce1050ebf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-19 10:54:28</sys_updated_on>
+        <title>With Order test</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

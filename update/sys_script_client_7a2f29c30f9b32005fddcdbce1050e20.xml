@@ -1,0 +1,1949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_personnel_area</field>
+        <global>true</global>
+        <messages/>
+        <name>Org_unit_choice_list_with_BA_filter</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+//   if (isLoading || newValue === '') {
+ //     return;
+  // }
+
+   //Type appropriate comment here, and begin script below
+   
+	var whatneeded = g_form.getValue('u_choice_40');
+	g_form.clearOptions('u_choice_40');
+	
+	
+	if(newValue == '0060') {
+     g_form.addOption('u_choice_40','3264','3264 - Programme Section, Daikundi, Afghanistan');
+     g_form.addOption('u_choice_40','3268','3268 - Programme Section, Ghor, Afghanistan');
+     g_form.addOption('u_choice_40','3276','3276 - Programme Section, Faryab, Afghanistan');
+     g_form.addOption('u_choice_40','3578','3578 - Programme. Section,  Nimroz, AFG');
+     g_form.addOption('u_choice_40','3579','3579 - Operations Section, Nimroz, AFG');
+     g_form.addOption('u_choice_40','4005','4005 - Programme Section, Kabul Zone');
+     g_form.addOption('u_choice_40','4006','4006 - Operations Section, Kabul Zone');
+     g_form.addOption('u_choice_40','5016','5016 - Programme Section, Kabul');
+     g_form.addOption('u_choice_40','5017','5017 - Field Operations Section, Kabul');
+     g_form.addOption('u_choice_40','5583','5583 - Operations Section, Kabul');
+     g_form.addOption('u_choice_40','5896','5896 - Off of the UNICEF Rep, Kabul');
+     g_form.addOption('u_choice_40','5902','5902 - Supply Section, Kabul');
+     g_form.addOption('u_choice_40','5908','5908 - Field Operations Section, Jalalabad');
+     g_form.addOption('u_choice_40','6361','6361 - Programme Section, Jalalabad');
+     g_form.addOption('u_choice_40','6362','6362 - Operations Section, Jalalabad');
+     g_form.addOption('u_choice_40','6422','6422 - Programme Section , Herat');
+     g_form.addOption('u_choice_40','6423','6423 - Programme Section, Faizabad');
+     g_form.addOption('u_choice_40','6425','6425 - Field Operations Section, Herat');
+     g_form.addOption('u_choice_40','6426','6426 - Programme Section , Mezar-I-Sharif');
+     g_form.addOption('u_choice_40','6458','6458 - Operations Section , Herat');
+     g_form.addOption('u_choice_40','6476','6476 - Programme Section, Kandahar');
+     g_form.addOption('u_choice_40','6524','6524 - Operations Section, Kandahar');
+     g_form.addOption('u_choice_40','6560','6560 - Operations Section, Faizabad');
+     g_form.addOption('u_choice_40','6561','6561 - Operations Section, Mezar-I-Sharif');
+     g_form.addOption('u_choice_40','8900','8900 - Programme Section, Badghis, Afghanistan');
+     g_form.addOption('u_choice_40','8902','8902 - Programme Section, Farah');
+     g_form.addOption('u_choice_40','8904','8904 - Programme Section, Gardez');
+     g_form.addOption('u_choice_40','8908','8908 - Programme Section, Bamyan');
+     g_form.addOption('u_choice_40','8911','8911 - Communication Section, Kabul');
+     g_form.addOption('u_choice_40','8912','8912 - Planning and Monitoring Section, Kabul');
+}
+if(newValue == '0090') {
+     g_form.addOption('u_choice_40','3627','3627 - Off of the UNICEF Rep, Tirana');
+     g_form.addOption('u_choice_40','5962','5962 - Programme Section, Tirana');
+     g_form.addOption('u_choice_40','6604','6604 - Operations Section, Tirana');
+}
+if(newValue == '0120') {
+     g_form.addOption('u_choice_40','3453','3453 - Programme Sec.(O/P),Tindouf,Algeria');
+     g_form.addOption('u_choice_40','5406','5406 - Communication Section');
+     g_form.addOption('u_choice_40','5651','5651 - Programme Section, Algiers');
+     g_form.addOption('u_choice_40','5778','5778 - Off of the UNICEF Rep, Algiers');
+     g_form.addOption('u_choice_40','6755','6755 - Operations Section, Algiers');
+}
+if(newValue == '0240') {
+     g_form.addOption('u_choice_40','2226','2226 - Southern Cone Hub');
+     g_form.addOption('u_choice_40','5891','5891 - Programme Section, Buenos Aires');
+     g_form.addOption('u_choice_40','5892','5892 - PFP Offset Budget, Argentina');
+     g_form.addOption('u_choice_40','5966','5966 - Off of the UNICEF Rep, Buenos Aires');
+     g_form.addOption('u_choice_40','6284','6284 - Adm and Fin Section, Buenos Aires');
+}
+if(newValue == '0260') {
+     g_form.addOption('u_choice_40','3634','3634 - Office of the UNICEF Rep, Yerevan');
+     g_form.addOption('u_choice_40','5964','5964 - Programme Section, Yerevan');
+     g_form.addOption('u_choice_40','6600','6600 - Operations Section, Yerevan');
+}
+if(newValue == '0310') {
+     g_form.addOption('u_choice_40','5965','5965 - Off of the UNICEF Rep, Baku');
+     g_form.addOption('u_choice_40','6587','6587 - Programme Section, Baku');
+     g_form.addOption('u_choice_40','6601','6601 - Operations Section, Baku');
+}
+if(newValue == '0420') {
+     g_form.addOption('u_choice_40','5266','5266 - Programme Section, Bridgetown');
+     g_form.addOption('u_choice_40','5795','5795 - Off of the UNICEF Rep, Bridgetown');
+     g_form.addOption('u_choice_40','6141','6141 - Proj Sup Comm & Info Section, Bridgetown');
+     g_form.addOption('u_choice_40','6445','6445 - Adm and Fin Section, Bridgetown');
+     g_form.addOption('u_choice_40','6756','6756 - Operations Section, Bridgetown');
+     g_form.addOption('u_choice_40','9005','9005 - Prog Sec, Port of Spain, Trini & Tobago');
+}
+if(newValue == '0490') {
+     g_form.addOption('u_choice_40','5338','5338 - Programme Section , Thimphu');
+     g_form.addOption('u_choice_40','5581','5581 - Operations Section, Thimphu');
+     g_form.addOption('u_choice_40','5975','5975 - Off of the UNICEF Rep, Thimphu');
+}
+if(newValue == '0510') {
+     g_form.addOption('u_choice_40','2461','2461 - Crossectoral & Support Section, La Paz');
+     g_form.addOption('u_choice_40','2513','2513 - Programme Section, Sucre Bolivia');
+     g_form.addOption('u_choice_40','2514','2514 - Operations Section, Sucre Bolivia');
+     g_form.addOption('u_choice_40','5533','5533 - Programme Section, La Paz');
+     g_form.addOption('u_choice_40','5535','5535 - Operations Section, La Paz');
+     g_form.addOption('u_choice_40','5805','5805 - Off of the UNICEF Rep, La Paz');
+     g_form.addOption('u_choice_40','6210','6210 - Info Section, La Paz');
+     g_form.addOption('u_choice_40','6378','6378 - Programme Section , Cochabamba');
+}
+if(newValue == '0520') {
+     g_form.addOption('u_choice_40','5237','5237 - Programme Section, Gaborone');
+     g_form.addOption('u_choice_40','5773','5773 - Off of the UNICEF Rep, Gaborone');
+     g_form.addOption('u_choice_40','6758','6758 - Operations Section, Gaborone');
+}
+if(newValue == '0530') {
+     g_form.addOption('u_choice_40','6525','6525 - Off of the UNICEF Rep, Sarajevo');
+     g_form.addOption('u_choice_40','6538','6538 - Operations Section, Sarajevo');
+     g_form.addOption('u_choice_40','6644','6644 - Programme Section, Banja Luka');
+     g_form.addOption('u_choice_40','6646','6646 - Programme Section, Sarajevo');
+}
+if(newValue == '0540') {
+     g_form.addOption('u_choice_40','2881','2881 - Brasilia - Resource Mobilization & Partn');
+     g_form.addOption('u_choice_40','2882','2882 - Brasilia - Social Policy M&E Section');
+     g_form.addOption('u_choice_40','3801','3801 - Programme Section, Rio de Janeiro, Brazi');
+     g_form.addOption('u_choice_40','3977','3977 - Programme Section, Manaus, Brazil');
+     g_form.addOption('u_choice_40','5285','5285 - Operations Section, Brasilia');
+     g_form.addOption('u_choice_40','5303','5303 - Info Section, Brasilia');
+     g_form.addOption('u_choice_40','5340','5340 - Programme Section , Sao Luis');
+     g_form.addOption('u_choice_40','5413','5413 - Programme Section, Brasilia');
+     g_form.addOption('u_choice_40','5476','5476 - Programme Section, Salvador');
+     g_form.addOption('u_choice_40','5557','5557 - PFP Offset Budget, Rio de Janeiro');
+     g_form.addOption('u_choice_40','5564','5564 - Reg Sup Ctr - Lat Am/Carib, Rio de Jan.');
+     g_form.addOption('u_choice_40','5565','5565 - PFP Offset Budget, Sao Paulo');
+     g_form.addOption('u_choice_40','5674','5674 - Programme Section , Belem');
+     g_form.addOption('u_choice_40','5787','5787 - Off of the UNICEF Rep, Brasilia');
+     g_form.addOption('u_choice_40','6212','6212 - Info and Comm Section, Brasilia');
+     g_form.addOption('u_choice_40','6308','6308 - Programme Section , Fortaleza');
+     g_form.addOption('u_choice_40','8404','8404 - PFP Offset Budget, Brazil');
+     g_form.addOption('u_choice_40','8767','8767 - Programme Section, Sao Paulo');
+}
+if(newValue == '0570') {
+     g_form.addOption('u_choice_40','3185','3185 - Operations Sec, Sofia, Bulgaria');
+     g_form.addOption('u_choice_40','8921','8921 - Office of UNICEF Representative, Sofia');
+     g_form.addOption('u_choice_40','8922','8922 - Programme Section, Sofia, Bulgaria');
+}
+if(newValue == '0600') {
+     g_form.addOption('u_choice_40','2476','2476 - Operations Section, Hakha Myanmar');
+     g_form.addOption('u_choice_40','2477','2477 - Programme Section, Hakha Myanmar');
+     g_form.addOption('u_choice_40','2479','2479 - Operations Section, Dawei Myanmar');
+     g_form.addOption('u_choice_40','2480','2480 - Programme Section, Dawei Myanmar');
+     g_form.addOption('u_choice_40','3166','3166 - Programme Sec, Maungdaw, Myanmar');
+     g_form.addOption('u_choice_40','3167','3167 - Operations Sec, Maungdaw, Myanmar');
+     g_form.addOption('u_choice_40','3169','3169 - Programme Sec, Lashio, Myanmar');
+     g_form.addOption('u_choice_40','3170','3170 - Operations Sec, Lashio, Myanmar');
+     g_form.addOption('u_choice_40','3227','3227 - Programme Section, Kengtung, Myanmar');
+     g_form.addOption('u_choice_40','3229','3229 - Programme Section, Mawlamyine, Myanmar');
+     g_form.addOption('u_choice_40','4208','4208 - Programme Sec, Myeik, Myanmar');
+     g_form.addOption('u_choice_40','5209','5209 - Programme Section, Yangon');
+     g_form.addOption('u_choice_40','5211','5211 - Health & Nutrition Section, Yangon');
+     g_form.addOption('u_choice_40','5212','5212 - Supply Section, Yangon');
+     g_form.addOption('u_choice_40','5215','5215 - Office of the UNICEF Rep, Yangon');
+     g_form.addOption('u_choice_40','6452','6452 - Social Policy, Adv & Monit Sec, Yangon');
+     g_form.addOption('u_choice_40','6454','6454 - Communication Sec, Yangon, Myanmar');
+     g_form.addOption('u_choice_40','6455','6455 - Operations Section, Yangon');
+     g_form.addOption('u_choice_40','8786','8786 - Programme Section, Mandalay');
+     g_form.addOption('u_choice_40','8787','8787 - Programme Section, Taunggyi, Myanmar');
+     g_form.addOption('u_choice_40','8788','8788 - Programme Planning Section, Sittwe');
+     g_form.addOption('u_choice_40','8793','8793 - Programme Section, Myitkyina, Myanmar');
+     g_form.addOption('u_choice_40','8798','8798 - Programme Section, Kalay, Myanmar');
+}
+if(newValue == '0610') {
+     g_form.addOption('u_choice_40','4641','4641 - Programme Sec., Gitega, Burundi');
+     g_form.addOption('u_choice_40','4642','4642 - Operations Sec., Gitega, Burundi');
+     g_form.addOption('u_choice_40','5020','5020 - Programme Section, Bujumbura');
+     g_form.addOption('u_choice_40','5623','5623 - Adm, Fin and Supply Section, Bujumbura');
+     g_form.addOption('u_choice_40','5653','5653 - Off of the UNICEF Rep, Bujumbura');
+     g_form.addOption('u_choice_40','6434','6434 - Operations Section, Bujumbura');
+     g_form.addOption('u_choice_40','6730','6730 - Info Section, Bujumbura');
+}
+if(newValue == '0630') {
+     g_form.addOption('u_choice_40','3184','3184 - Operations Sec, Minsk, Belarus');
+     g_form.addOption('u_choice_40','3213','3213 - Communications Sec, Minsk, Belarus');
+     g_form.addOption('u_choice_40','5977','5977 - Off of the UNICEF Rep, Minsk');
+     g_form.addOption('u_choice_40','6721','6721 - Programme Section  Minsk');
+}
+if(newValue == '0660') {
+     g_form.addOption('u_choice_40','2279','2279 - Programme Section, Kratie, Cambodia');
+     g_form.addOption('u_choice_40','2280','2280 - Operations Section, Kratie, Cambodia');
+     g_form.addOption('u_choice_40','3154','3154 - Programme Sec, Preah Sihanouk, Cambodia');
+     g_form.addOption('u_choice_40','3155','3155 - Operations Sec, Preah Sihanouk, Cambodia');
+     g_form.addOption('u_choice_40','3157','3157 - Programme Sec, Siem Reap, Cambodia');
+     g_form.addOption('u_choice_40','3158','3158 - Operations Sec, Siem Reap, Cambodia');
+     g_form.addOption('u_choice_40','3160','3160 - Programme Sec, Kampong Cham, Cambodia');
+     g_form.addOption('u_choice_40','3161','3161 - Operations Sec, Kampong Cham, Cambodia');
+     g_form.addOption('u_choice_40','3163','3163 - Programme Sec, Phnom Penh Zone Off');
+     g_form.addOption('u_choice_40','3164','3164 - Operations Sec, Phnom Penh Zone Off');
+     g_form.addOption('u_choice_40','5437','5437 - Programme Section, Phnom Penh');
+     g_form.addOption('u_choice_40','5438','5438 - Office of the UNICEF Rep, Cambodia');
+     g_form.addOption('u_choice_40','5440','5440 - Operations Section, Phnom Penh');
+     g_form.addOption('u_choice_40','6465','6465 - Communication & Info Section, Phnom Penh');
+     g_form.addOption('u_choice_40','6507','6507 - Programme Section, Battambang');
+     g_form.addOption('u_choice_40','6510','6510 - Adm and Fin Section, Battambang');
+     g_form.addOption('u_choice_40','6511','6511 - Supply Section, Phnom Penh');
+}
+if(newValue == '0690') {
+     g_form.addOption('u_choice_40','2963','2963 - Programme Section Maroua, Cameroon');
+     g_form.addOption('u_choice_40','2964','2964 - Operation Sections, Maroua, Cameroon');
+     g_form.addOption('u_choice_40','3789','3789 - Operations Section, Bertoua, Cameroon');
+     g_form.addOption('u_choice_40','3790','3790 - Programme Section, Bertoua, Cameroon');
+     g_form.addOption('u_choice_40','4503','4503 - Programme Sec, Douala, Cameroon');
+     g_form.addOption('u_choice_40','4505','4505 - Operation Sections, Douala, Cameroon');
+     g_form.addOption('u_choice_40','5228','5228 - Programme Section, Yaounde');
+     g_form.addOption('u_choice_40','5665','5665 - Operations Section, Yaounde');
+     g_form.addOption('u_choice_40','5745','5745 - Office UNICEF Representative, Yaounde');
+}
+if(newValue == '0750') {
+     g_form.addOption('u_choice_40','2276','2276 - Programme Section, Bambari');
+     g_form.addOption('u_choice_40','2277','2277 - Operations Section, Bambari');
+     g_form.addOption('u_choice_40','2378','2378 - Operations Section, Bouar');
+     g_form.addOption('u_choice_40','2379','2379 - Programme Section, Bouar');
+     g_form.addOption('u_choice_40','2381','2381 - Operations Section, Ndele');
+     g_form.addOption('u_choice_40','2382','2382 - Programme Section, Ndele');
+     g_form.addOption('u_choice_40','2384','2384 - Operations Section, Zemio');
+     g_form.addOption('u_choice_40','2385','2385 - Programme Section, Zemio');
+     g_form.addOption('u_choice_40','2953','2953 - Operations Section, Kanga Bandoro');
+     g_form.addOption('u_choice_40','5227','5227 - Programme Section, Bangui');
+     g_form.addOption('u_choice_40','5687','5687 - Programme Section, Bossangoa');
+     g_form.addOption('u_choice_40','5979','5979 - Office UNICEF Representative, Bangui');
+     g_form.addOption('u_choice_40','6397','6397 - Operations Section, Bangui');
+     g_form.addOption('u_choice_40','6431','6431 - Communication and Info, Bangui');
+     g_form.addOption('u_choice_40','8790','8790 - Programme Section, Kanga Bandoro');
+}
+if(newValue == '0780') {
+     g_form.addOption('u_choice_40','2411','2411 - Programme Section, O/P Badulla');
+     g_form.addOption('u_choice_40','3236','3236 - Operations Section, Kilinochi, Sri Lanka');
+     g_form.addOption('u_choice_40','3238','3238 - Operations Sec, Battilcalao, Sri Lanka');
+     g_form.addOption('u_choice_40','5173','5173 - Supply Section, Colombo');
+     g_form.addOption('u_choice_40','5174','5174 - Programme Section, Colombo');
+     g_form.addOption('u_choice_40','5176','5176 - Adm and Fin Section, Colombo');
+     g_form.addOption('u_choice_40','5689','5689 - Ext Relations Section, Colombo');
+     g_form.addOption('u_choice_40','5894','5894 - Off of the UNICEF Rep, Colombo');
+     g_form.addOption('u_choice_40','5915','5915 - PFP Offset Budget, Sri Lanka');
+     g_form.addOption('u_choice_40','6364','6364 - Emergency Operations, Colombo');
+     g_form.addOption('u_choice_40','8861','8861 - Programme Section, Battilcaloa');
+     g_form.addOption('u_choice_40','8863','8863 - Programme Section, Kilinochi');
+}
+if(newValue == '0810') {
+     g_form.addOption('u_choice_40','2551','2551 - Programme Section, Sarh Chad');
+     g_form.addOption('u_choice_40','2552','2552 - Operations Section, Sarh Chad');
+     g_form.addOption('u_choice_40','2959','2959 - Programme Section, Bol, Chad');
+     g_form.addOption('u_choice_40','2960','2960 - Operations Section, Bol, Chad');
+     g_form.addOption('u_choice_40','2966','2966 - Programme Section, Bagassola, Chad');
+     g_form.addOption('u_choice_40','2967','2967 - Operations Section, Bagassola, Chad');
+     g_form.addOption('u_choice_40','3792','3792 - Programme Section, Moundou, Chad');
+     g_form.addOption('u_choice_40','3793','3793 - Operations Section, Moundou, Chad');
+     g_form.addOption('u_choice_40','3795','3795 - Programme Section, Mongo, Chad');
+     g_form.addOption('u_choice_40','3796','3796 - Operations Section, Mongo, Chad');
+     g_form.addOption('u_choice_40','3798','3798 - Programme Section, Mao, Chad');
+     g_form.addOption('u_choice_40','3799','3799 - Operations Section, Mao, Chad');
+     g_form.addOption('u_choice_40','5330','5330 - Admin and Fin Sec, NDjamena');
+     g_form.addOption('u_choice_40','5663','5663 - Programme Section, NDjamena');
+     g_form.addOption('u_choice_40','5981','5981 - Office of the  Representative, NDjamena');
+     g_form.addOption('u_choice_40','6137','6137 - Supply Section, NDjamena');
+     g_form.addOption('u_choice_40','6274','6274 - Info Section, NDjamena');
+     g_form.addOption('u_choice_40','6759','6759 - Operations Section, NDjamena');
+}
+if(newValue == '0840') {
+     g_form.addOption('u_choice_40','5781','5781 - Programme Section, Santiago');
+     g_form.addOption('u_choice_40','5782','5782 - Off of the UNICEF Rep, Santiago');
+     g_form.addOption('u_choice_40','6138','6138 - Operations Section, Santiago');
+     g_form.addOption('u_choice_40','8882','8882 - PFP Offset Budget, Chile');
+}
+if(newValue == '0860') {
+     g_form.addOption('u_choice_40','3280','3280 - Programme Sec, Shanghai, China');
+     g_form.addOption('u_choice_40','3281','3281 - Operations Sec, Shanghai, China');
+     g_form.addOption('u_choice_40','5401','5401 - Office of the UNICEF Rep, Beijing');
+     g_form.addOption('u_choice_40','5402','5402 - Programme Section, Beijing');
+     g_form.addOption('u_choice_40','5545','5545 - Supply Section, Beijing');
+     g_form.addOption('u_choice_40','5546','5546 - Operations Section, Beijing');
+     g_form.addOption('u_choice_40','8884','8884 - PFP-Offset Budget - China');
+}
+if(newValue == '0930') {
+     g_form.addOption('u_choice_40','2203','2203 - Prog Section, Cali, Colombia');
+     g_form.addOption('u_choice_40','4281','4281 - Programme Sec., Quibdo, Colombia');
+     g_form.addOption('u_choice_40','5063','5063 - Programme Section, Bogota');
+     g_form.addOption('u_choice_40','5064','5064 - Operations Section, Bogota');
+     g_form.addOption('u_choice_40','5532','5532 - Adm and Fin Section, Bogota');
+     g_form.addOption('u_choice_40','5570','5570 - PFP Offset Budget, Colombia');
+     g_form.addOption('u_choice_40','5982','5982 - Off of the UNICEF Rep, Bogota');
+     g_form.addOption('u_choice_40','6209','6209 - Info Section, Bogota');
+     g_form.addOption('u_choice_40','8733','8733 - Reg Serv in Country Office, Bogota');
+}
+if(newValue == '0990') {
+     g_form.addOption('u_choice_40','2190','2190 - Programme Section, Province Kinshasa');
+     g_form.addOption('u_choice_40','2191','2191 - Operations Section, Province Kinshasa');
+     g_form.addOption('u_choice_40','2192','2192 - Programme Section, Ouest Kinshasa');
+     g_form.addOption('u_choice_40','2193','2193 - Operations Section, Ouest Kinshasa');
+     g_form.addOption('u_choice_40','2194','2194 - Programme Section, Sud Lubumbashi');
+     g_form.addOption('u_choice_40','2195','2195 - Operations Section, Sud Lubumbashi');
+     g_form.addOption('u_choice_40','2196','2196 - Programme Section, East Goma');
+     g_form.addOption('u_choice_40','2197','2197 - Operations Section, East Goma');
+     g_form.addOption('u_choice_40','2557','2557 - Programme Section, Libenge DRC');
+     g_form.addOption('u_choice_40','2558','2558 - Operations Section, Libenge DRC');
+     g_form.addOption('u_choice_40','2560','2560 - Programme Section, Beni DRC');
+     g_form.addOption('u_choice_40','2567','2567 - Operations Section, Beni DRC');
+     g_form.addOption('u_choice_40','3557','3557 - Programme Section, Bandundu, DRC');
+     g_form.addOption('u_choice_40','3558','3558 - Operations Sec, Bandundu, DRC');
+     g_form.addOption('u_choice_40','3803','3803 - Operations Section, Maniema, DRC');
+     g_form.addOption('u_choice_40','3804','3804 - Programme Section, Maniema, DRC');
+     g_form.addOption('u_choice_40','3917','3917 - Programme Section, Kalemie, DRC');
+     g_form.addOption('u_choice_40','3918','3918 - Operations Section, Kalemie, DRC');
+     g_form.addOption('u_choice_40','3923','3923 - Programme Section, Mbandaka, DRC');
+     g_form.addOption('u_choice_40','3924','3924 - Operations Section, Mbandaka, DRC');
+     g_form.addOption('u_choice_40','4803','4803 - Programme Section, Dungu, DRC');
+     g_form.addOption('u_choice_40','5311','5311 - Programme Section , Bukavu');
+     g_form.addOption('u_choice_40','5467','5467 - Programme Section, Kinshasa');
+     g_form.addOption('u_choice_40','5514','5514 - Operations Section, Kinshasa');
+     g_form.addOption('u_choice_40','5515','5515 - Programme Section , Lubumbashi');
+     g_form.addOption('u_choice_40','5517','5517 - Info Section, Kinshasa');
+     g_form.addOption('u_choice_40','5730','5730 - Office of the Representative, Kinshasa');
+     g_form.addOption('u_choice_40','5731','5731 - Programme Section , Mbuji Mayi');
+     g_form.addOption('u_choice_40','6668','6668 - Programme Section, Kananga');
+     g_form.addOption('u_choice_40','6669','6669 - Programme Section , Goma');
+     g_form.addOption('u_choice_40','6741','6741 - Operations Section , Goma');
+     g_form.addOption('u_choice_40','8553','8553 - Programme Section, Kisangani');
+     g_form.addOption('u_choice_40','8792','8792 - Programme Section, Matadi');
+     g_form.addOption('u_choice_40','8969','8969 - Programme Section, Bunia, DRC');
+}
+if(newValue == '1020') {
+     g_form.addOption('u_choice_40','5652','5652 - Programme Section, San Jose');
+     g_form.addOption('u_choice_40','6615','6615 - Off of the UNICEF Rep, San Jose');
+}
+if(newValue == '1030') {
+     g_form.addOption('u_choice_40','2664','2664 - Partnership, Croatia');
+     g_form.addOption('u_choice_40','3183','3183 - Operations Sec, Zagreb, Croatia');
+     g_form.addOption('u_choice_40','6516','6516 - Programme Section, Croatia');
+     g_form.addOption('u_choice_40','9053','9053 - PFP Offset Budget, Croatia');
+}
+if(newValue == '1050') {
+     g_form.addOption('u_choice_40','3702','3702 - Office of the UNICEF Rep, Havana');
+     g_form.addOption('u_choice_40','6470','6470 - Programme Section, Havana');
+}
+if(newValue == '1170') {
+     g_form.addOption('u_choice_40','5245','5245 - Operations Section, Cotonou');
+     g_form.addOption('u_choice_40','5246','5246 - Programme Section, Cotonou');
+     g_form.addOption('u_choice_40','5986','5986 - Office of the  Representative, Cotonou');
+     g_form.addOption('u_choice_40','6267','6267 - Info Section, Cotonou');
+     g_form.addOption('u_choice_40','6679','6679 - Health/ WES Section, Cotonou');
+     g_form.addOption('u_choice_40','8707','8707 - Education Section, Cotonou');
+     g_form.addOption('u_choice_40','8918','8918 - Programme Section, Parakou, Benin');
+}
+if(newValue == '1200') {
+     g_form.addOption('u_choice_40','2326','2326 - Markets,Finance & Strategic Data Unit');
+     g_form.addOption('u_choice_40','2327','2327 - International Transport Unit');
+     g_form.addOption('u_choice_40','2978','2978 - Supply Chain Strengthening, O/P ESARO');
+     g_form.addOption('u_choice_40','2986','2986 - Supply Chain Strengthening');
+     g_form.addOption('u_choice_40','3402','3402 - Country Support Centre, Copenhagen');
+     g_form.addOption('u_choice_40','3403','3403 - Vaccine Centre, Copenhagen');
+     g_form.addOption('u_choice_40','3404','3404 - Medical & Nutrition Centre, Copenhagen');
+     g_form.addOption('u_choice_40','3405','3405 - Water, Sanit & Educ Centre, Copenhagen');
+     g_form.addOption('u_choice_40','3764','3764 - Innovation Unit');
+     g_form.addOption('u_choice_40','3765','3765 - Emergency Unit II');
+     g_form.addOption('u_choice_40','4051','4051 - Special Location, Local Staff, CPH');
+     g_form.addOption('u_choice_40','4402','4402 - Health Technology Centre');
+     g_form.addOption('u_choice_40','4629','4629 - Knowledge Management Centre');
+     g_form.addOption('u_choice_40','4952','4952 - Supply Division, O/P Rome');
+     g_form.addOption('u_choice_40','6069','6069 - Fin Mgmt and Budget Centre, COPENHAGEN');
+     g_form.addOption('u_choice_40','6072','6072 - Contracting Centre, COPENHAGEN');
+     g_form.addOption('u_choice_40','6075','6075 - Directors Office, COPENHAGEN');
+     g_form.addOption('u_choice_40','6076','6076 - Operational Analysis & Technology Centre');
+     g_form.addOption('u_choice_40','6077','6077 - Quality Assurance Centre, COPENHAGEN');
+     g_form.addOption('u_choice_40','6080','6080 - Logistics Centre, COPENHAGEN');
+     g_form.addOption('u_choice_40','6083','6083 - Human Resources and Admin Centre, CPH');
+     g_form.addOption('u_choice_40','8444','8444 - Procurement Services Team, Copenhagen');
+     g_form.addOption('u_choice_40','8558','8558 - Pharma & Micronutr Team, Copenhagen');
+     g_form.addOption('u_choice_40','8666','8666 - Leave with pay, Copenhagen');
+     g_form.addOption('u_choice_40','8759','8759 - New York Supply Centre (Supply Division)');
+}
+if(newValue == '1260') {
+     g_form.addOption('u_choice_40','5065','5065 - Programme Section, Santo Domingo');
+     g_form.addOption('u_choice_40','5263','5263 - Adm, Fin and Supply Sec, Santo Domingo');
+     g_form.addOption('u_choice_40','5989','5989 - Off of the UNICEF Rep, Santo Domingo');
+}
+if(newValue == '1350') {
+     g_form.addOption('u_choice_40','2879','2879 - Operations Section, Esmeralda, Ecuador');
+     g_form.addOption('u_choice_40','2880','2880 - Programme Section, Esmeralda, Ecuador');
+     g_form.addOption('u_choice_40','2884','2884 - Operations Section, Pedernales, Ecuador');
+     g_form.addOption('u_choice_40','2887','2887 - Programme Section, Pedernales, Ecuador');
+     g_form.addOption('u_choice_40','5061','5061 - Programme Section, Quito');
+     g_form.addOption('u_choice_40','5368','5368 - Off of the UNICEF Rep, Quito');
+     g_form.addOption('u_choice_40','5370','5370 - Operations Section, Quito');
+     g_form.addOption('u_choice_40','5918','5918 - PFP Offset Budget, Quito');
+     g_form.addOption('u_choice_40','8956','8956 - PFP Offset Budget, Guayaquil');
+}
+if(newValue == '1380') {
+     g_form.addOption('u_choice_40','5791','5791 - Programme Section, San Salvador');
+     g_form.addOption('u_choice_40','5792','5792 - Off of the UNICEF Rep, San Salvador');
+     g_form.addOption('u_choice_40','6254','6254 - Adm and Fin Section, San Salvador');
+}
+if(newValue == '1390') {
+     g_form.addOption('u_choice_40','2501','2501 - Operations Section, Bata');
+     g_form.addOption('u_choice_40','2502','2502 - Programme Section, Bata');
+     g_form.addOption('u_choice_40','5667','5667 - Programme Section , Malabo');
+     g_form.addOption('u_choice_40','5991','5991 - Office of the Representative, Malabo');
+     g_form.addOption('u_choice_40','6307','6307 - Admin, Fin and Supply Sec, Malabo');
+}
+if(newValue == '1410') {
+     g_form.addOption('u_choice_40','2337','2337 - Programme Section, Oromiya Zonal Office');
+     g_form.addOption('u_choice_40','2338','2338 - Operations Section, Oromiya Zonal Office');
+     g_form.addOption('u_choice_40','3356','3356 - AU/UNECA Liaison Off (ESARO)Addis Ababa');
+     g_form.addOption('u_choice_40','3678','3678 - Programme Section, Semera, Ethiopia');
+     g_form.addOption('u_choice_40','3806','3806 - Programme Section, Gode, Ethiopia');
+     g_form.addOption('u_choice_40','3807','3807 - Operations Section, Gode, Ethiopia');
+     g_form.addOption('u_choice_40','3809','3809 - Programme Section, Kebridehar, Ethiopia');
+     g_form.addOption('u_choice_40','3810','3810 - Operations Section, Kebridehar, Ethiopia');
+     g_form.addOption('u_choice_40','3957','3957 - Prog.Sec.Dollo Ado, Ethiopia');
+     g_form.addOption('u_choice_40','5036','5036 - Programme Section, Addis Ababa');
+     g_form.addOption('u_choice_40','5241','5241 - Programme Education, Addis Ababa');
+     g_form.addOption('u_choice_40','5251','5251 - Water Supply Section, Addis Ababa');
+     g_form.addOption('u_choice_40','5326','5326 - Oper - Adm Section, Addis Ababa');
+     g_form.addOption('u_choice_40','5365','5365 - Programme Section, Bahir Dar');
+     g_form.addOption('u_choice_40','5519','5519 - Off of the UNICEF Rep, Addis Ababa');
+     g_form.addOption('u_choice_40','5637','5637 - Oper - Fin and HR Sec, Addis Ababa');
+     g_form.addOption('u_choice_40','5761','5761 - Health Programmes, Addis Ababa');
+     g_form.addOption('u_choice_40','6236','6236 - Programme Section, Awasa');
+     g_form.addOption('u_choice_40','6653','6653 - Programme Health Section, Bahir Dar');
+     g_form.addOption('u_choice_40','6662','6662 - Programme Section, Mekelle');
+     g_form.addOption('u_choice_40','6691','6691 - Operations Section, Bahir Dar');
+     g_form.addOption('u_choice_40','6692','6692 - Operations Section , Awasa');
+     g_form.addOption('u_choice_40','6761','6761 - Operations Section, Addis Ababa');
+     g_form.addOption('u_choice_40','7074','7074 - Programme Section, Asosa, Ethiopia');
+     g_form.addOption('u_choice_40','8746','8746 - Programme Section, Jijiga');
+     g_form.addOption('u_choice_40','9080','9080 - Programme Section, Gambela, Ethiopia');
+}
+if(newValue == '1420') {
+     g_form.addOption('u_choice_40','6549','6549 - Programme Section, Asmara');
+     g_form.addOption('u_choice_40','6609','6609 - Off of the UNICEF Rep, Asmara');
+     g_form.addOption('u_choice_40','6740','6740 - Operations Section, Asmara');
+}
+if(newValue == '1430') {
+     g_form.addOption('u_choice_40','2711','2711 - Programme Section, Funafuti Tuvalu');
+     g_form.addOption('u_choice_40','4078','4078 - Programme Section, Apia, Samoa');
+     g_form.addOption('u_choice_40','5654','5654 - Programme Section, Suva');
+     g_form.addOption('u_choice_40','6175','6175 - Programme/Operation Section, Tarawa');
+     g_form.addOption('u_choice_40','6199','6199 - Programme/Operation Section, Port Vila');
+     g_form.addOption('u_choice_40','6621','6621 - Representatives Office, Suva');
+     g_form.addOption('u_choice_40','6623','6623 - Operations Section, Suva');
+     g_form.addOption('u_choice_40','8865','8865 - Programme/Operation Section, Honiara');
+}
+if(newValue == '1530') {
+     g_form.addOption('u_choice_40','6584','6584 - Programme Section , Gabon');
+     g_form.addOption('u_choice_40','8751','8751 - Office of the Representative, Gabon');
+     g_form.addOption('u_choice_40','8812','8812 - Operations Section, Libreville');
+}
+if(newValue == '1560') {
+     g_form.addOption('u_choice_40','5993','5993 - Office of the Representative, Banjul');
+     g_form.addOption('u_choice_40','6125','6125 - Programme Section , Banjul');
+     g_form.addOption('u_choice_40','6324','6324 - Admin and Fin Sec , Banjul');
+}
+if(newValue == '1600') {
+     g_form.addOption('u_choice_40','3382','3382 - Programme Sec, Sukhumi, Georgia');
+     g_form.addOption('u_choice_40','3383','3383 - Operations Sec, Sukhumi, Georgia');
+     g_form.addOption('u_choice_40','5994','5994 - Off of the UNICEF Rep, Tblisi');
+     g_form.addOption('u_choice_40','6647','6647 - Programme Section, Tblisi');
+     g_form.addOption('u_choice_40','6729','6729 - Operations Section, Tblisi');
+}
+if(newValue == '1620') {
+     g_form.addOption('u_choice_40','5281','5281 - Operations Section, Accra, Ghana');
+     g_form.addOption('u_choice_40','5308','5308 - Programme Section, Accra');
+     g_form.addOption('u_choice_40','5995','5995 - Office of the  Representative, Accra');
+     g_form.addOption('u_choice_40','6220','6220 - Programme Section, Tamale');
+}
+if(newValue == '1680') {
+     g_form.addOption('u_choice_40','5032','5032 - Programme Section, Guatemala City');
+     g_form.addOption('u_choice_40','5293','5293 - Operations Section, Guatemala City');
+     g_form.addOption('u_choice_40','5788','5788 - Off of the UNICEF Rep, Guatemala City');
+}
+if(newValue == '1770') {
+     g_form.addOption('u_choice_40','2213','2213 - Programme Section, Western Conakry');
+     g_form.addOption('u_choice_40','3244','3244 - Programme Sec, Kankan, Guinea');
+     g_form.addOption('u_choice_40','3245','3245 - Operations Sec, Kankan, Guinea');
+     g_form.addOption('u_choice_40','5996','5996 - Office of the Representative, Conakry');
+     g_form.addOption('u_choice_40','6116','6116 - Programme Section, Conakry');
+     g_form.addOption('u_choice_40','6162','6162 - Operations Section, Conakry');
+     g_form.addOption('u_choice_40','7064','7064 - Programme Section, Nzerekore, Guinea');
+}
+if(newValue == '1800') {
+     g_form.addOption('u_choice_40','5302','5302 - Programme Section, Georgetown');
+     g_form.addOption('u_choice_40','6614','6614 - Off of the UNICEF Rep, Georgetown');
+     g_form.addOption('u_choice_40','6677','6677 - Operations Section, Georgetown');
+     g_form.addOption('u_choice_40','8685','8685 - Programme Section, Paramaribo');
+}
+if(newValue == '1830') {
+     g_form.addOption('u_choice_40','2182','2182 - Outpost Section Hinche, Haiti');
+     g_form.addOption('u_choice_40','2204','2204 - Outpost Section Cap Haitien, Haiti');
+     g_form.addOption('u_choice_40','2777','2777 - Programme Section, Gonaives, Haiti');
+     g_form.addOption('u_choice_40','2871','2871 - Programme Section, Les Cayes, Haiti');
+     g_form.addOption('u_choice_40','2872','2872 - Operations Section, Les Cayes, Haiti');
+     g_form.addOption('u_choice_40','2888','2888 - Programme Section, Jeremie, Haiti');
+     g_form.addOption('u_choice_40','2889','2889 - Operations Section, Jeremie, Haiti');
+     g_form.addOption('u_choice_40','4902','4902 - Prog Sec, O/P Dominican Republic');
+     g_form.addOption('u_choice_40','5395','5395 - Programme Section, Port Au Prince');
+     g_form.addOption('u_choice_40','5431','5431 - Adm, Fin and HR Section, Port Au Prince');
+     g_form.addOption('u_choice_40','5432','5432 - Operations Section, Port Au Prince');
+     g_form.addOption('u_choice_40','5643','5643 - Comm and Info, Port Au Prince');
+     g_form.addOption('u_choice_40','5799','5799 - Off of the UNICEF Rep, Port Au Prince');
+}
+if(newValue == '1860') {
+     g_form.addOption('u_choice_40','5315','5315 - Programme Section, Tegucigalpa');
+     g_form.addOption('u_choice_40','6617','6617 - Off of the UNICEF Rep, Tegucigalpa');
+     g_form.addOption('u_choice_40','6619','6619 - Oper - Adm and Fin Section, Tegucigalpa');
+}
+if(newValue == '1950') {
+     g_form.addOption('u_choice_40','2181','2181 - Directors Office, GSSC, Outposted NY');
+     g_form.addOption('u_choice_40','2851','2851 - Directors Office, GSSC');
+     g_form.addOption('u_choice_40','2852','2852 - HR Admin Section, GSSC');
+     g_form.addOption('u_choice_40','2853','2853 - HR Payroll Section, GSSC');
+     g_form.addOption('u_choice_40','2854','2854 - Global Help Desk Section');
+     g_form.addOption('u_choice_40','2855','2855 - Finance Section, GSSC');
+     g_form.addOption('u_choice_40','2856','2856 - Service Management Section');
+}
+if(newValue == '2040') {
+     g_form.addOption('u_choice_40','3203','3203 - Operations Sec, Bhubaneshwar, India');
+     g_form.addOption('u_choice_40','3204','3204 - Operations Sec, Guwahati, India');
+     g_form.addOption('u_choice_40','3205','3205 - Operations Sec, Raipur, India');
+     g_form.addOption('u_choice_40','3206','3206 - Operations Sec, Ranchi, India');
+     g_form.addOption('u_choice_40','3258','3258 - Programme Sec,Guwahati, India');
+     g_form.addOption('u_choice_40','3260','3260 - Programme Sec, Raipur,  India');
+     g_form.addOption('u_choice_40','3262','3262 - Programme Section, Ranchi, India');
+     g_form.addOption('u_choice_40','3277','3277 - HIV/AIDS Section, New Delhi, India');
+     g_form.addOption('u_choice_40','3378','3378 - Operations Section, Ghandinager, India');
+     g_form.addOption('u_choice_40','3380','3380 - Resource Mobilization Section, New Delhi');
+     g_form.addOption('u_choice_40','3552','3552 - ROSA Media Hub Section, New Delhi');
+     g_form.addOption('u_choice_40','4229','4229 - Programme Communication Sec, New Delhi');
+     g_form.addOption('u_choice_40','5027','5027 - Education, New Delhi');
+     g_form.addOption('u_choice_40','5028','5028 - Programme Section, Gandhinagar');
+     g_form.addOption('u_choice_40','5031','5031 - Off of the Zone Rep, Lucknow');
+     g_form.addOption('u_choice_40','5182','5182 - Off of the UNICEF Rep, New Delhi');
+     g_form.addOption('u_choice_40','5189','5189 - Operations Section, Mumbai');
+     g_form.addOption('u_choice_40','5190','5190 - Operations Section, Hyderabad');
+     g_form.addOption('u_choice_40','5191','5191 - Programme Section, Chennai');
+     g_form.addOption('u_choice_40','5192','5192 - Programme Section, Calcutta');
+     g_form.addOption('u_choice_40','5193','5193 - Office of the Zone Representative, Patna');
+     g_form.addOption('u_choice_40','5206','5206 - Adm and Fin Section, New Delhi');
+     g_form.addOption('u_choice_40','5207','5207 - Operations Section, Lucknow');
+     g_form.addOption('u_choice_40','5208','5208 - Programme Section, Hyderabad');
+     g_form.addOption('u_choice_40','5236','5236 - Programme Section, Mumbai');
+     g_form.addOption('u_choice_40','5387','5387 - Supply & Procurement Section, New Delhi');
+     g_form.addOption('u_choice_40','5443','5443 - WES Section, New Delhi');
+     g_form.addOption('u_choice_40','5446','5446 - Planning Section, New Delhi');
+     g_form.addOption('u_choice_40','5454','5454 - Programme Section, Jaipur');
+     g_form.addOption('u_choice_40','5457','5457 - Programme Section, Bhopal');
+     g_form.addOption('u_choice_40','5485','5485 - Comm and Info Section, New Delhi');
+     g_form.addOption('u_choice_40','5488','5488 - Off of the UNICEF Rep, Hyderabad');
+     g_form.addOption('u_choice_40','5489','5489 - Programme Section , Lucknow');
+     g_form.addOption('u_choice_40','5490','5490 - Programme Section, Patna');
+     g_form.addOption('u_choice_40','5567','5567 - PFP Offset Budget - New Delhi');
+     g_form.addOption('u_choice_40','5573','5573 - Human Resources Section, New Delhi');
+     g_form.addOption('u_choice_40','5576','5576 - Planning Section, Lucknow');
+     g_form.addOption('u_choice_40','5579','5579 - Operations Section, Calcutta');
+     g_form.addOption('u_choice_40','5602','5602 - Operations Section, Chennai');
+     g_form.addOption('u_choice_40','5696','5696 - WES Section, Mumbai');
+     g_form.addOption('u_choice_40','5870','5870 - Off of the Zone Rep, Mumbai');
+     g_form.addOption('u_choice_40','5874','5874 - Off of the Zone Rep, Hyderabad');
+     g_form.addOption('u_choice_40','5876','5876 - Off of the Zone Rep, Chennai');
+     g_form.addOption('u_choice_40','5877','5877 - Off of the Zone Rep, Calcutta');
+     g_form.addOption('u_choice_40','5880','5880 - Prog Oper Control Section, New Delhi');
+     g_form.addOption('u_choice_40','5890','5890 - Programme Section, Bhubaneshwar');
+     g_form.addOption('u_choice_40','6171','6171 - Data and Doc Systems, New Delhi');
+     g_form.addOption('u_choice_40','6204','6204 - Community Development, Lucknow');
+     g_form.addOption('u_choice_40','6266','6266 - Operations Section, Bhopal');
+     g_form.addOption('u_choice_40','6368','6368 - Programme Health Section, New Delhi');
+     g_form.addOption('u_choice_40','6456','6456 - Child Dev and Nutrition, New Delhi');
+     g_form.addOption('u_choice_40','6480','6480 - Adm and Fin Section, Bhopal');
+     g_form.addOption('u_choice_40','6481','6481 - Adm and Fin Section, Jaipur');
+     g_form.addOption('u_choice_40','6490','6490 - Community Development, New Delhi');
+     g_form.addOption('u_choice_40','6573','6573 - Communication and Info, Bhopal');
+     g_form.addOption('u_choice_40','6574','6574 - Health Programmes, Gandhinagar');
+     g_form.addOption('u_choice_40','6696','6696 - Operations Section, Jaipur');
+     g_form.addOption('u_choice_40','6697','6697 - Operations Section, Patna');
+     g_form.addOption('u_choice_40','6717','6717 - WES Section, Bhubaneshwar');
+}
+if(newValue == '2070') {
+     g_form.addOption('u_choice_40','2153','2153 - Communication & Public Adv Sec, Jakarta');
+     g_form.addOption('u_choice_40','3892','3892 - Programme Sec, Manokwari, Indonesia');
+     g_form.addOption('u_choice_40','3893','3893 - Operations Section, Manokwari, Indonesia');
+     g_form.addOption('u_choice_40','4002','4002 - Operations Section,  Banda Aceh');
+     g_form.addOption('u_choice_40','5481','5481 - Programme/Operation Section, Surabaya');
+     g_form.addOption('u_choice_40','5839','5839 - Office of the UNICEF Rep, Jakarta');
+     g_form.addOption('u_choice_40','5841','5841 - Advocacy & Social Mobilization, Jakarta');
+     g_form.addOption('u_choice_40','5842','5842 - Programme Section, Jakarta');
+     g_form.addOption('u_choice_40','5921','5921 - PFP-Offset Budget - Indonesia');
+     g_form.addOption('u_choice_40','6403','6403 - Prog/Ops Section, Makassar');
+     g_form.addOption('u_choice_40','6404','6404 - Programme/Operation Section, Kupang');
+     g_form.addOption('u_choice_40','6688','6688 - Programme/Operation Section, Semarang');
+     g_form.addOption('u_choice_40','6762','6762 - Operations Section, Jakarta');
+     g_form.addOption('u_choice_40','8550','8550 - Programme/Operation Section, Jayapura');
+     g_form.addOption('u_choice_40','8551','8551 - Programme Section, Ambon');
+     g_form.addOption('u_choice_40','8695','8695 - Prog Sec, Banda Aceh, Indonesia');
+}
+if(newValue == '2100') {
+     g_form.addOption('u_choice_40','5998','5998 - Off of the UNICEF Rep, Teheran');
+     g_form.addOption('u_choice_40','6155','6155 - Programme Section , Teheran');
+     g_form.addOption('u_choice_40','6358','6358 - Operations Section, Tehran');
+}
+if(newValue == '2130') {
+     g_form.addOption('u_choice_40','2482','2482 - Programme Sec, Sulaymaniah ZO, Iraq');
+     g_form.addOption('u_choice_40','2483','2483 - Operations Sec, Sulaymaniah, Iraq');
+     g_form.addOption('u_choice_40','3461','3461 - Programme Sec, Dohuk, Iraq');
+     g_form.addOption('u_choice_40','3462','3462 - Operations Sec, Dohuk, Iraq');
+     g_form.addOption('u_choice_40','3464','3464 - Programme Sec, Kut, Iraq');
+     g_form.addOption('u_choice_40','3465','3465 - Operations Sec, Kut, Iraq');
+     g_form.addOption('u_choice_40','3467','3467 - Programme Sec, Amarah, Iraq');
+     g_form.addOption('u_choice_40','3468','3468 - Operations Sec, Amarah, Iraq');
+     g_form.addOption('u_choice_40','3704','3704 - Off of the UNICEF Rep, Iraq , ISCA Amman');
+     g_form.addOption('u_choice_40','4201','4201 - Oper Sec, Zonal Off So, Basrah, Iraq');
+     g_form.addOption('u_choice_40','4653','4653 - Central Zone Prog Sec, Baghdad, Iraq');
+     g_form.addOption('u_choice_40','4805','4805 - Programme Sec, Ar Ramadi, Iraq');
+     g_form.addOption('u_choice_40','4806','4806 - Operations Sec, Ar Ramadi, Iraq');
+     g_form.addOption('u_choice_40','4808','4808 - Programme Sec, An Najaf, Iraq');
+     g_form.addOption('u_choice_40','4809','4809 - Operations Sec, An Najaf, Iraq');
+     g_form.addOption('u_choice_40','4811','4811 - Programme Sec, Kirkuk, Iraq');
+     g_form.addOption('u_choice_40','4812','4812 - Operations Sec, Kirkuk, Iraq');
+     g_form.addOption('u_choice_40','5462','5462 - Off of the UNICEF Rep, Baghdad');
+     g_form.addOption('u_choice_40','6139','6139 - Programme Section, Baghdad');
+     g_form.addOption('u_choice_40','6367','6367 - Operations Section, Baghdad');
+     g_form.addOption('u_choice_40','6472','6472 - Communication Section, Baghdad');
+     g_form.addOption('u_choice_40','6603','6603 - Prog Sec, Zonal Off North, Erbil, Iraq');
+     g_form.addOption('u_choice_40','7068','7068 - Prog Sec, Zonal Off So Basrah, Iraq');
+     g_form.addOption('u_choice_40','8951','8951 - ISCA Ops Sec, Iraq Supp Center ,Amman');
+     g_form.addOption('u_choice_40','8952','8952 - ISCA Prog Sec, Iraq Supp Center, Amman');
+     g_form.addOption('u_choice_40','9034','9034 - Prog Sec, Iraq Support Center,  Kuwait');
+     g_form.addOption('u_choice_40','9065','9065 - ISCA O/P CPH');
+}
+if(newValue == '2220') {
+     g_form.addOption('u_choice_40','6000','6000 - Research, Florence');
+}
+if(newValue == '2250') {
+     g_form.addOption('u_choice_40','2504','2504 - Operations Section, Bondoukou');
+     g_form.addOption('u_choice_40','2505','2505 - Programme Section,  Bandoukou');
+     g_form.addOption('u_choice_40','2955','2955 - Operations Section, Korhogo CIV');
+     g_form.addOption('u_choice_40','2956','2956 - Programme Section, Korhogo, CIV');
+     g_form.addOption('u_choice_40','2957','2957 - Operations Section, Man, Cote dIvoire');
+     g_form.addOption('u_choice_40','5275','5275 - Programme Section, Abidjan');
+     g_form.addOption('u_choice_40','5724','5724 - Off of the UNICEF Rep, Abidjan');
+     g_form.addOption('u_choice_40','6735','6735 - Operations Section, Abidjan');
+     g_form.addOption('u_choice_40','7070','7070 - Programme Section, Bouake, Cote DIvoire');
+     g_form.addOption('u_choice_40','9028','9028 - Programme Section, Man, Cote dIvoire');
+}
+if(newValue == '2280') {
+     g_form.addOption('u_choice_40','5047','5047 - Programme Section, Kingston');
+     g_form.addOption('u_choice_40','5796','5796 - Off of the UNICEF Rep, Kingston');
+     g_form.addOption('u_choice_40','6463','6463 - Operations Section, Kingston');
+     g_form.addOption('u_choice_40','6486','6486 - Adm and Fin Section, Kingston');
+}
+if(newValue == '2340') {
+     g_form.addOption('u_choice_40','2390','2390 - Operations Section, Amman, Jordan');
+     g_form.addOption('u_choice_40','2570','2570 - Common Services Section, Jordan');
+     g_form.addOption('u_choice_40','2628','2628 - Programme Section, Ruwayshid');
+     g_form.addOption('u_choice_40','2629','2629 - Operations Section, Ruwayshid');
+     g_form.addOption('u_choice_40','5461','5461 - Programme Section, Amman');
+     g_form.addOption('u_choice_40','6003','6003 - Off of the UNICEF Rep, Amman');
+     g_form.addOption('u_choice_40','6605','6605 - Communication Section, Amman');
+}
+if(newValue == '234R') {
+     g_form.addOption('u_choice_40','2128','2128 - MENARO, O/P Gaziantep, Turkey');
+     g_form.addOption('u_choice_40','2402','2402 - MENARO, O/P Algiers, Algeria');
+     g_form.addOption('u_choice_40','2775','2775 - MENA Regional Office, Oman Outpost');
+     g_form.addOption('u_choice_40','2991','2991 - MENA Regional Office, GULF AREA OFFICE');
+     g_form.addOption('u_choice_40','3682','3682 - Support to Libya emergency-Cairo Center');
+     g_form.addOption('u_choice_40','3830','3830 - PFP Offset Budget - MENA');
+     g_form.addOption('u_choice_40','4277','4277 - PFP Offset Budget- MENA, O/P Geneva');
+     g_form.addOption('u_choice_40','4526','4526 - Support to Libya (O/P)');
+     g_form.addOption('u_choice_40','4854','4854 - MENA Regional Office, O/P Rabat, Morocco');
+     g_form.addOption('u_choice_40','5079','5079 - Reg Serv - Communication, Amman');
+     g_form.addOption('u_choice_40','5636','5636 - Common Serv Section, Amman');
+     g_form.addOption('u_choice_40','5695','5695 - Reg Serv - Operations, Amman');
+     g_form.addOption('u_choice_40','5929','5929 - Office of the Reg Director, Amman');
+     g_form.addOption('u_choice_40','5936','5936 - Reg Serv - Prog Section, Amman');
+     g_form.addOption('u_choice_40','8815','8815 - Reg Serv - Human Resources, Amman');
+     g_form.addOption('u_choice_40','8816','8816 - Oper Common Serv Section, Amman');
+}
+if(newValue == '2390') {
+     g_form.addOption('u_choice_40','6506','6506 - Programme Section, Astana, Kazakhastan');
+     g_form.addOption('u_choice_40','6590','6590 - Off of UNICEF Rep., Astana, Kazakhastan');
+     g_form.addOption('u_choice_40','6642','6642 - Operations Section, Astana, Kazakhastan');
+     g_form.addOption('u_choice_40','8671','8671 - Prog Section, Alma Ata, Kazakhastan');
+     g_form.addOption('u_choice_40','8672','8672 - Operations Sec., Alma Ata, Kazakhastan');
+}
+if(newValue == '2400') {
+     g_form.addOption('u_choice_40','2537','2537 - Programme Section, Lodwar');
+     g_form.addOption('u_choice_40','2538','2538 - Operations Section, Lodwar');
+     g_form.addOption('u_choice_40','2625','2625 - Operations Section , Garissa');
+     g_form.addOption('u_choice_40','2626','2626 - Operations Section , Dadaab');
+     g_form.addOption('u_choice_40','3956','3956 - Programme Section, Dadaab');
+     g_form.addOption('u_choice_40','4213','4213 - Programme Sec, Kisumu, Kenya');
+     g_form.addOption('u_choice_40','4214','4214 - Operations Sec., Kisumu, Kenya');
+     g_form.addOption('u_choice_40','5393','5393 - Operations Section, Nairobi');
+     g_form.addOption('u_choice_40','5473','5473 - Programme Section, Nairobi');
+     g_form.addOption('u_choice_40','5748','5748 - Off of the UNICEF Rep, Nairobi');
+     g_form.addOption('u_choice_40','6268','6268 - Communication and Info, Nairobi');
+     g_form.addOption('u_choice_40','6702','6702 - Programme Section , Garissa');
+}
+if(newValue == '240B') {
+     g_form.addOption('u_choice_40','2376','2376 - Innovation Section, Kenya, Nairobi');
+     g_form.addOption('u_choice_40','2387','2387 - Innovation Section, O/P Bangkok,Thailand');
+     g_form.addOption('u_choice_40','2388','2388 - Innovation Section, O/P Kampala, Uganda');
+     g_form.addOption('u_choice_40','2576','2576 - Office of Global Innovation, New York');
+     g_form.addOption('u_choice_40','2826','2826 - Innovation Section, Copenhagen Denmark');
+     g_form.addOption('u_choice_40','2827','2827 - Innovation Section, Suva, Fiji');
+}
+if(newValue == '240R') {
+     g_form.addOption('u_choice_40','2929','2929 - ESAR Regional, O/P Brussels Belgium');
+     g_form.addOption('u_choice_40','2977','2977 - ESARO O/P Johannesburg, South Africa');
+     g_form.addOption('u_choice_40','4778','4778 - Programme Section O/P Gaborone');
+     g_form.addOption('u_choice_40','5746','5746 - Off of the Reg Director, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6196','6196 - Reg Serv - Prog Section, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6276','6276 - Reg Serv - Info and Comm, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6278','6278 - Reg Serv - Oper, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6552','6552 - Reg Serv - Ext Relations, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6611','6611 - Reg Serv - Personnel, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6701','6701 - Reg Serv - Supply Sec, Nairobi Regnl');
+     g_form.addOption('u_choice_40','6760','6760 - Reg Serv - Info Section, Nairobi Regnl');
+     g_form.addOption('u_choice_40','7075','7075 - Emer Sec, ESARO, Johannesburg, SA');
+     g_form.addOption('u_choice_40','8385','8385 - Programme Section O/P in Addis');
+     g_form.addOption('u_choice_40','8386','8386 - Programme Section O/P in Harare');
+     g_form.addOption('u_choice_40','8466','8466 - Info & Comm Section O/P Pretoria');
+}
+if(newValue == '2450') {
+     g_form.addOption('u_choice_40','3211','3211 - Operations Sec, Bishkek, Kyrgyzstan');
+     g_form.addOption('u_choice_40','3212','3212 - Communications Sec, Bishkek, Kyrgyzstan');
+     g_form.addOption('u_choice_40','3483','3483 - Programme/Ops Section, Osh, Kyrgyzstan');
+     g_form.addOption('u_choice_40','3629','3629 - Off of the UNICEF Rep, Bishkek');
+     g_form.addOption('u_choice_40','6595','6595 - Programme Section , Bishkek');
+}
+if(newValue == '2460') {
+     g_form.addOption('u_choice_40','5078','5078 - Programme Section, Vientiane');
+     g_form.addOption('u_choice_40','5684','5684 - Operations Section, Vientiane');
+     g_form.addOption('u_choice_40','5861','5861 - Office of the UNICEF Rep, Vientiane');
+}
+if(newValue == '2490') {
+     g_form.addOption('u_choice_40','2710','2710 - Programme Section, Mount Lebanon');
+     g_form.addOption('u_choice_40','2712','2712 - Operations Section, Mt. Lebanon');
+     g_form.addOption('u_choice_40','2861','2861 - Programme Section Zahle, Lebanon');
+     g_form.addOption('u_choice_40','2862','2862 - Operations Section Zahle, Lebanon');
+     g_form.addOption('u_choice_40','2863','2863 - Programme Section Quabayyat, Lebanon');
+     g_form.addOption('u_choice_40','2864','2864 - Operations Section Quabayyat, Lebanon');
+     g_form.addOption('u_choice_40','2865','2865 - Programme Section Tripoli, Lebanon');
+     g_form.addOption('u_choice_40','2866','2866 - Operations Section Tripoli, Lebanon');
+     g_form.addOption('u_choice_40','3181','3181 - Programme Sec, Tyre, Lebanon');
+     g_form.addOption('u_choice_40','3182','3182 - Operations Sec, Tyre, Lebanon');
+     g_form.addOption('u_choice_40','5041','5041 - Programme Section, Beirut');
+     g_form.addOption('u_choice_40','5930','5930 - Communication Section, Beirut');
+     g_form.addOption('u_choice_40','6006','6006 - Off of the UNICEF Rep, Beirut');
+     g_form.addOption('u_choice_40','6638','6638 - Operations Section, Beirut');
+}
+if(newValue == '2520') {
+     g_form.addOption('u_choice_40','5629','5629 - Programme Section, Maseru');
+     g_form.addOption('u_choice_40','5974','5974 - Off of the UNICEF Rep, Maseru');
+     g_form.addOption('u_choice_40','6136','6136 - Operations Section, Maseru');
+}
+if(newValue == '2550') {
+     g_form.addOption('u_choice_40','2701','2701 - Operations Section , Zwedru');
+     g_form.addOption('u_choice_40','2702','2702 - Programme Section, Zwedru');
+     g_form.addOption('u_choice_40','2704','2704 - Operations Section , Harper');
+     g_form.addOption('u_choice_40','2705','2705 - Programme Section, Harper');
+     g_form.addOption('u_choice_40','2707','2707 - Operations Section , Gbarnga');
+     g_form.addOption('u_choice_40','2708','2708 - Programme Section, Gbarnga');
+     g_form.addOption('u_choice_40','6007','6007 - Off of the UNICEF Rep, Monrovia');
+     g_form.addOption('u_choice_40','6159','6159 - Programme Section, Monrovia');
+     g_form.addOption('u_choice_40','6743','6743 - Operations Section, Monrovia');
+}
+if(newValue == '2580') {
+     g_form.addOption('u_choice_40','2780','2780 - Libya Outpost Section Tunis, Tunisia');
+     g_form.addOption('u_choice_40','3861','3861 - Programme Section, Benghazi, Libyan Arab');
+     g_form.addOption('u_choice_40','3862','3862 - Operations Section, Benghazi Libyan Arab');
+     g_form.addOption('u_choice_40','3863','3863 - Tripoli Emergency Hub, Zarzis');
+     g_form.addOption('u_choice_40','4053','4053 - Operations Section, Tripoli');
+     g_form.addOption('u_choice_40','6650','6650 - Programme Section, Tripoli');
+     g_form.addOption('u_choice_40','8661','8661 - Office of the Representative, Tripoli');
+}
+if(newValue == '2660') {
+     g_form.addOption('u_choice_40','3633','3633 - Off of the UNICEF Rep, Skopje');
+     g_form.addOption('u_choice_40','4351','4351 - Communication Section, Skopje');
+     g_form.addOption('u_choice_40','6537','6537 - Programme Section, Skopje');
+     g_form.addOption('u_choice_40','6539','6539 - Operations Section, Skopje');
+}
+if(newValue == '2670') {
+     g_form.addOption('u_choice_40','2436','2436 - Outpost Section Diego-Suarez,Madagascar');
+     g_form.addOption('u_choice_40','2437','2437 - Outpost Section Antsohihy, Madagascar');
+     g_form.addOption('u_choice_40','2438','2438 - Outpost Section Farafangana, Madagascar');
+     g_form.addOption('u_choice_40','2439','2439 - Outpost Section Maintirano, Madagascar');
+     g_form.addOption('u_choice_40','2440','2440 - Outpost Section Fenerive Est, Madagascar');
+     g_form.addOption('u_choice_40','2441','2441 - Outpost Section Tulear, Madagascar');
+     g_form.addOption('u_choice_40','2522','2522 - Programme Section, Fort Dauphin');
+     g_form.addOption('u_choice_40','2523','2523 - Operations Section, Fort Dauphin');
+     g_form.addOption('u_choice_40','2586','2586 - Outpost Section Sambava, Madagascar');
+     g_form.addOption('u_choice_40','2587','2587 - Outpost Section Morondava, Madagascar');
+     g_form.addOption('u_choice_40','2588','2588 - Outpost Section Ambatondraza, Madagascar');
+     g_form.addOption('u_choice_40','2589','2589 - Outpost Section Toamasina, Madagascar');
+     g_form.addOption('u_choice_40','2590','2590 - Outpost Section Maevatanana, Madagascar');
+     g_form.addOption('u_choice_40','2591','2591 - Outpost Section Tsiroanomandi,Madagascar');
+     g_form.addOption('u_choice_40','2592','2592 - Outpost Section Miarinarivo, Madagascar');
+     g_form.addOption('u_choice_40','2593','2593 - Outpost Section Antsirabe, Madagascar');
+     g_form.addOption('u_choice_40','2594','2594 - Outpost Section Ambositra, Madagascar');
+     g_form.addOption('u_choice_40','2595','2595 - Outpost Section Fianarantsoa, Madagascar');
+     g_form.addOption('u_choice_40','2596','2596 - Outpost Section Manakara, Madagascar');
+     g_form.addOption('u_choice_40','2597','2597 - Outpost Section Ihosy, Madagascar');
+     g_form.addOption('u_choice_40','2598','2598 - Outpost Section Mahajanga, Madagascar');
+     g_form.addOption('u_choice_40','3344','3344 - Prog Sec, Ambovombe, Madagascar');
+     g_form.addOption('u_choice_40','3345','3345 - Operations Sec, Ambovombe, Madagascar');
+     g_form.addOption('u_choice_40','5056','5056 - Adm, Fin & Supply Sec, Antananarivo');
+     g_form.addOption('u_choice_40','5638','5638 - Programme Section, Antananarivo');
+     g_form.addOption('u_choice_40','6008','6008 - Off of the UNICEF Rep, Antananarivo');
+}
+if(newValue == '2690') {
+     g_form.addOption('u_choice_40','5356','5356 - Programme Section, Lilongwe');
+     g_form.addOption('u_choice_40','6009','6009 - Off of the UNICEF Rep, Lilongwe');
+     g_form.addOption('u_choice_40','6134','6134 - Operations Section, Lilongwe');
+}
+if(newValue == '2700') {
+     g_form.addOption('u_choice_40','3703','3703 - Office of the UNICEF Rep, Kuala Lumpur');
+     g_form.addOption('u_choice_40','5226','5226 - Programme/Operation Section, Kuala Lumpu');
+}
+if(newValue == '2740') {
+     g_form.addOption('u_choice_40','3651','3651 - Office of the UNICEF Rep, Male');
+     g_form.addOption('u_choice_40','5175','5175 - Programme Section , Male');
+     g_form.addOption('u_choice_40','5895','5895 - Operations Section, Male');
+}
+if(newValue == '2760') {
+     g_form.addOption('u_choice_40','2762','2762 - Programme Section,Gao Mali');
+     g_form.addOption('u_choice_40','2763','2763 - Operations Section, Gao Mali');
+     g_form.addOption('u_choice_40','2765','2765 - Programme Section,Sikasso Mali');
+     g_form.addOption('u_choice_40','2766','2766 - Operations Section, Sikasso Mali');
+     g_form.addOption('u_choice_40','2927','2927 - Programme Section, Tombouctou');
+     g_form.addOption('u_choice_40','2928','2928 - Operations Section, Tombouctou');
+     g_form.addOption('u_choice_40','5471','5471 - Programme Section, Bamako');
+     g_form.addOption('u_choice_40','5742','5742 - Off of the UNICEF Rep, Bamako');
+     g_form.addOption('u_choice_40','6127','6127 - Programme Section, Mopti');
+     g_form.addOption('u_choice_40','6128','6128 - Programme Section, Segou');
+     g_form.addOption('u_choice_40','6228','6228 - Proj Support Comm & Info Sec, Bamako');
+     g_form.addOption('u_choice_40','6272','6272 - Operations Section, Bamako');
+     g_form.addOption('u_choice_40','6396','6396 - Programme Section, Kayes');
+     g_form.addOption('u_choice_40','6419','6419 - Programme Section, Koulikoro');
+}
+if(newValue == '2820') {
+     g_form.addOption('u_choice_40','2228','2228 - Programme Sec, Kiffa, Mauritania');
+     g_form.addOption('u_choice_40','2229','2229 - Operations Section, Kiffa, Mauritania');
+     g_form.addOption('u_choice_40','2937','2937 - Programme Section Bassikounou,Mauritania');
+     g_form.addOption('u_choice_40','2938','2938 - Operation Section Bassikounou,Mauritania');
+     g_form.addOption('u_choice_40','3247','3247 - Programme Sec, Aioun, Mauritania');
+     g_form.addOption('u_choice_40','5054','5054 - Programme Section, Nouakchott');
+     g_form.addOption('u_choice_40','6010','6010 - Off of the UNICEF Rep, Nouakchott');
+     g_form.addOption('u_choice_40','6164','6164 - Operations Section, Nouakchott');
+     g_form.addOption('u_choice_40','6689','6689 - Info and Comm Section, Nouakchott');
+}
+if(newValue == '2850') {
+     g_form.addOption('u_choice_40','5295','5295 - Programme Section, Mexico');
+     g_form.addOption('u_choice_40','5372','5372 - Info Section, Mexico');
+     g_form.addOption('u_choice_40','5537','5537 - Operations Section, Mexico');
+     g_form.addOption('u_choice_40','5707','5707 - PFP Offset Budget, Mexico');
+     g_form.addOption('u_choice_40','5807','5807 - Off of the UNICEF Rep, Mexico');
+}
+if(newValue == '2880') {
+     g_form.addOption('u_choice_40','2212','2212 - Programme Section, Khuvsgul');
+     g_form.addOption('u_choice_40','3554','3554 - Programme Section, Khovd City, Mongolia');
+     g_form.addOption('u_choice_40','3555','3555 - Operations Section, Khovd City, Mongolia');
+     g_form.addOption('u_choice_40','6013','6013 - Office of the UNICEF Rep, Ulaanbaator');
+     g_form.addOption('u_choice_40','6460','6460 - Programme Section, Ulaanbaatar');
+     g_form.addOption('u_choice_40','6624','6624 - Operations Section, Ulaanbaatar');
+}
+if(newValue == '2910') {
+     g_form.addOption('u_choice_40','4001','4001 - Communication Section, Rabat');
+     g_form.addOption('u_choice_40','5060','5060 - Programme Section, Rabat');
+     g_form.addOption('u_choice_40','5779','5779 - Off of the UNICEF Rep, Rabat');
+     g_form.addOption('u_choice_40','5923','5923 - PFP Offset Budget, Morocco');
+     g_form.addOption('u_choice_40','6661','6661 - Operations Section, Rabat');
+}
+if(newValue == '2970') {
+     g_form.addOption('u_choice_40','2138','2138 - Programme Sec, Singhupalchowk, Nepal');
+     g_form.addOption('u_choice_40','2139','2139 - Programme Section, Dolakha, Nepal');
+     g_form.addOption('u_choice_40','2140','2140 - Programme Section, Gorkha, Nepal');
+     g_form.addOption('u_choice_40','2141','2141 - Programme Section, Nuwakot, Nepal');
+     g_form.addOption('u_choice_40','2562','2562 - Programme Section, Jumla');
+     g_form.addOption('u_choice_40','2563','2563 - Operations Section, Jumla');
+     g_form.addOption('u_choice_40','3706','3706 - Programme Sec, Mangalsen, Nepal');
+     g_form.addOption('u_choice_40','3707','3707 - Operations Sec, Mangalsen, Nepal');
+     g_form.addOption('u_choice_40','3715','3715 - Programme Sec, Taulihawa, Nepal');
+     g_form.addOption('u_choice_40','3716','3716 - Operations Sec. Taulihawa, Nepal');
+     g_form.addOption('u_choice_40','3718','3718 - Programme Sec., Rajbiraj, Nepal');
+     g_form.addOption('u_choice_40','3729','3729 - Programme Sec., Birgang , Nepal');
+     g_form.addOption('u_choice_40','3730','3730 - Operations Sec., Birgang, Nepal');
+     g_form.addOption('u_choice_40','4652','4652 - Programme Sec, Dhadheldhura, Nepal');
+     g_form.addOption('u_choice_40','4679','4679 - Common Services Unit, Nepal');
+     g_form.addOption('u_choice_40','5009','5009 - Programme Section, Kathmandu');
+     g_form.addOption('u_choice_40','5177','5177 - Health - Nutrition Section, Kathmandu');
+     g_form.addOption('u_choice_40','5179','5179 - Operations Section, Kathmandu');
+     g_form.addOption('u_choice_40','5180','5180 - WES Section, Kathmandu');
+     g_form.addOption('u_choice_40','5258','5258 - Programme Section, Nepalgunj');
+     g_form.addOption('u_choice_40','5459','5459 - Info and Comm Section, Kathmandu');
+     g_form.addOption('u_choice_40','5493','5493 - Community Based Serv Section, Kathmandu');
+     g_form.addOption('u_choice_40','5494','5494 - Programme Section , Biratnager');
+     g_form.addOption('u_choice_40','5497','5497 - WES Section, Biratnager');
+     g_form.addOption('u_choice_40','5585','5585 - Education Section, Kathmandu');
+     g_form.addOption('u_choice_40','5690','5690 - Field Operations Section, Kathmandu');
+     g_form.addOption('u_choice_40','5910','5910 - Off of the UNICEF Rep, Kathmandu');
+     g_form.addOption('u_choice_40','5911','5911 - Programme Planning, Kathmandu');
+     g_form.addOption('u_choice_40','5912','5912 - Programme Section, Bharatpur, Nepal');
+     g_form.addOption('u_choice_40','6152','6152 - Programme Planning, Nepalgunj');
+}
+if(newValue == '297R') {
+     g_form.addOption('u_choice_40','3857','3857 - ROSA Regional Services, New Delhi');
+     g_form.addOption('u_choice_40','5700','5700 - Office of the Reg Director, Kathmandu');
+     g_form.addOption('u_choice_40','5701','5701 - Reg Serv - Ext Relations, Kathmandu');
+     g_form.addOption('u_choice_40','5863','5863 - Reg Serv - Oper, Kathmandu');
+     g_form.addOption('u_choice_40','6417','6417 - Reg Serv-Plan, Res, Eval & Monit, Kathm');
+     g_form.addOption('u_choice_40','6576','6576 - Reg Serv - Comm. Section, Kathmandu');
+     g_form.addOption('u_choice_40','6640','6640 - Reg Serv - Prog Section, Kathmandu');
+}
+if(newValue == '3120') {
+     g_form.addOption('u_choice_40','2516','2516 - Programme Section, Bluefields');
+     g_form.addOption('u_choice_40','2517','2517 - Operations Section, Bluefields');
+     g_form.addOption('u_choice_40','4279','4279 - Programme Sec., Bilwi, Nicaragua');
+     g_form.addOption('u_choice_40','5243','5243 - Programme Section, Managua');
+     g_form.addOption('u_choice_40','6016','6016 - Off of the UNICEF Rep, Managua');
+     g_form.addOption('u_choice_40','6485','6485 - Operations Section, Managua');
+}
+if(newValue == '3180') {
+     g_form.addOption('u_choice_40','2951','2951 - Programme Section, Diffa');
+     g_form.addOption('u_choice_40','2952','2952 - Operations Section, Diffa');
+     g_form.addOption('u_choice_40','5346','5346 - Programme Section, Niamey');
+     g_form.addOption('u_choice_40','5720','5720 - Supply Section, Niamey');
+     g_form.addOption('u_choice_40','5721','5721 - Off of the UNICEF Rep, Niamey');
+     g_form.addOption('u_choice_40','6329','6329 - Programme Section, Maradi');
+     g_form.addOption('u_choice_40','6613','6613 - Programme Section, Agadez');
+     g_form.addOption('u_choice_40','6681','6681 - Operations Section, Niamey');
+}
+if(newValue == '3210') {
+     g_form.addOption('u_choice_40','2404','2404 - Programme Sec, Port Harcourt Zone Offic');
+     g_form.addOption('u_choice_40','2405','2405 - Operations Sec, Port Harcourt Zone Offic');
+     g_form.addOption('u_choice_40','2407','2407 - Programme Sec, Akure Zone Office');
+     g_form.addOption('u_choice_40','2408','2408 - Operations Sec, Akure Zone Office');
+     g_form.addOption('u_choice_40','2507','2507 - Operations Section, Maiduguri Nigeria');
+     g_form.addOption('u_choice_40','2508','2508 - Programme Section,  Maiduguri');
+     g_form.addOption('u_choice_40','2510','2510 - Operations Section, Sokoto Nigeria');
+     g_form.addOption('u_choice_40','2530','2530 - Programme Section,  Sokoto Nigeria');
+     g_form.addOption('u_choice_40','2532','2532 - Operations Section, Katsina Nigeria');
+     g_form.addOption('u_choice_40','2533','2533 - Programme Section, Katsina Nigeria');
+     g_form.addOption('u_choice_40','5059','5059 - Programme Section, Lagos');
+     g_form.addOption('u_choice_40','5324','5324 - Operations Section, Lagos');
+     g_form.addOption('u_choice_40','5530','5530 - Info Section, Lagos');
+     g_form.addOption('u_choice_40','5776','5776 - Off of the UNICEF Rep, Lagos');
+     g_form.addOption('u_choice_40','5777','5777 - Programme Section, Kaduna');
+     g_form.addOption('u_choice_40','5926','5926 - PFP Offset - Lagos');
+     g_form.addOption('u_choice_40','6246','6246 - Research and Editorial Section, Lagos');
+     g_form.addOption('u_choice_40','6247','6247 - Programme Section, Bauchi');
+     g_form.addOption('u_choice_40','6327','6327 - Programme Section, Enugu');
+     g_form.addOption('u_choice_40','7014','7014 - Info and Comm Section, Abuja');
+     g_form.addOption('u_choice_40','8683','8683 - Programme Section, Abuja');
+     g_form.addOption('u_choice_40','8794','8794 - Operations Section, Abuja');
+     g_form.addOption('u_choice_40','8795','8795 - Off of the UNICEF Rep, Abuja');
+}
+if(newValue == '3300') {
+     g_form.addOption('u_choice_40','2214','2214 - Operations Section, Quetta');
+     g_form.addOption('u_choice_40','2215','2215 - Operations Section, Lahore');
+     g_form.addOption('u_choice_40','3129','3129 - Operations Section, Karachi, Pakistan');
+     g_form.addOption('u_choice_40','3416','3416 - Child Protection Section, Pakistan');
+     g_form.addOption('u_choice_40','4881','4881 - Programme Sec, Dubai (Pakistan Prog)');
+     g_form.addOption('u_choice_40','5074','5074 - Programme Section, Peshawar');
+     g_form.addOption('u_choice_40','5076','5076 - Education Section, Islamabad');
+     g_form.addOption('u_choice_40','5260','5260 - Info & Ext Relations Sec, Islamabad');
+     g_form.addOption('u_choice_40','5265','5265 - Programme Section, Quetta');
+     g_form.addOption('u_choice_40','5278','5278 - WES Section, Islamabad');
+     g_form.addOption('u_choice_40','5280','5280 - Operations Section, Islamabad');
+     g_form.addOption('u_choice_40','5299','5299 - Health - Nutrition Section, Islamabad');
+     g_form.addOption('u_choice_40','5399','5399 - Programme Section, Karachi');
+     g_form.addOption('u_choice_40','5400','5400 - Planning & Monitoring Sec, Islamabad');
+     g_form.addOption('u_choice_40','5434','5434 - Programme Section , Lahore');
+     g_form.addOption('u_choice_40','5478','5478 - Programme Section, Islamabad');
+     g_form.addOption('u_choice_40','5630','5630 - PFP Offset Budget, Pakistan');
+     g_form.addOption('u_choice_40','5704','5704 - Supply and Prog Operation, Islamabad');
+     g_form.addOption('u_choice_40','5833','5833 - Off of the UNICEF Rep, Islamabad');
+     g_form.addOption('u_choice_40','5899','5899 - Field Operations Section, Peshawar');
+}
+if(newValue == '3330') {
+     g_form.addOption('u_choice_40','3701','3701 - Office of the UNICEF Rep, Panama');
+     g_form.addOption('u_choice_40','6252','6252 - Programme Section, Panama');
+}
+if(newValue == '333R') {
+     g_form.addOption('u_choice_40','2225','2225 - Panama Hub');
+     g_form.addOption('u_choice_40','3186','3186 - Regl Serv - Prog Sec,   O/P New York');
+     g_form.addOption('u_choice_40','3856','3856 - RO Prog Sec (O/P), Dominican Republic');
+     g_form.addOption('u_choice_40','7052','7052 - RegSupCen - PFP FR - Panama');
+     g_form.addOption('u_choice_40','7056','7056 - RegSupCen - PFP Sales - Panama');
+     g_form.addOption('u_choice_40','8728','8728 - Reg Serv - Prog Planning Sec, Panama');
+     g_form.addOption('u_choice_40','8729','8729 - Reg Serv - Info Sec, Panama');
+     g_form.addOption('u_choice_40','8730','8730 - Reg Serv - Oper Section, Panama');
+     g_form.addOption('u_choice_40','8731','8731 - Reg Serv - Prog Section, Panama');
+     g_form.addOption('u_choice_40','8732','8732 - Office of the Reg Director, Panama');
+     g_form.addOption('u_choice_40','8734','8734 - Reg Support Center - Latin America');
+}
+if(newValue == '3360') {
+     g_form.addOption('u_choice_40','5804','5804 - Programme Section, Asuncion');
+     g_form.addOption('u_choice_40','6608','6608 - Off of the UNICEF Rep, Asuncion');
+     g_form.addOption('u_choice_40','6618','6618 - Operations Section, Asuncion');
+}
+if(newValue == '3380') {
+     g_form.addOption('u_choice_40','5269','5269 - Adm, Fin and Supply Section, Brazzaville');
+     g_form.addOption('u_choice_40','5725','5725 - Off of the UNICEF Rep, Brazzaville');
+     g_form.addOption('u_choice_40','5727','5727 - Programme Section, Brazzaville');
+     g_form.addOption('u_choice_40','5728','5728 - Info Section, Brazzaville');
+     g_form.addOption('u_choice_40','8791','8791 - Programme Section, Pointe Noire');
+}
+if(newValue == '3390') {
+     g_form.addOption('u_choice_40','3252','3252 - Programme Section, Abancay, Peru');
+     g_form.addOption('u_choice_40','3254','3254 - Programme Section, Ayacucho, Peru');
+     g_form.addOption('u_choice_40','3815','3815 - Programme Section, Ucayali, Peru');
+     g_form.addOption('u_choice_40','3816','3816 - Operations Section, Ucayali, Peru');
+     g_form.addOption('u_choice_40','5066','5066 - Programme Section, Lima');
+     g_form.addOption('u_choice_40','5332','5332 - Operations Section, Lima');
+     g_form.addOption('u_choice_40','5800','5800 - Off of the UNICEF Rep, Lima');
+     g_form.addOption('u_choice_40','5802','5802 - Info and Comm Section, Lima');
+     g_form.addOption('u_choice_40','5803','5803 - Programme Section, Cuzco, Peru');
+     g_form.addOption('u_choice_40','5927','5927 - PFP Offset Budget, Peru');
+}
+if(newValue == '3420') {
+     g_form.addOption('u_choice_40','2254','2254 - Programme Section, Tacloban');
+     g_form.addOption('u_choice_40','2255','2255 - Operations Section, Tacloban');
+     g_form.addOption('u_choice_40','2259','2259 - Outposted Section- Guiuan, Philippines');
+     g_form.addOption('u_choice_40','2528','2528 - Programme Section, Davao Philippines');
+     g_form.addOption('u_choice_40','2529','2529 - Operations Section, Davao Philippines');
+     g_form.addOption('u_choice_40','2754','2754 - Operations Section , Zamboanga');
+     g_form.addOption('u_choice_40','2755','2755 - Programme Section, Zamboanga');
+     g_form.addOption('u_choice_40','4828','4828 - Programme Sec, Cotabato, Philippines');
+     g_form.addOption('u_choice_40','5034','5034 - Programme Section, Manila');
+     g_form.addOption('u_choice_40','5375','5375 - Operations Section, Manila');
+     g_form.addOption('u_choice_40','5852','5852 - Office of the UNICEF Rep, Manila');
+     g_form.addOption('u_choice_40','5853','5853 - Supply Section, Manila');
+     g_form.addOption('u_choice_40','5928','5928 - PFP-Offset Budget - Philippines');
+}
+if(newValue == '3660') {
+     g_form.addOption('u_choice_40','3626','3626 - Off of the UNICEF Rep, Bucharest');
+     g_form.addOption('u_choice_40','6021','6021 - Programme Section, Bucharest');
+     g_form.addOption('u_choice_40','6466','6466 - Operations Sec, Bucharest, Romania');
+}
+if(newValue == '3750') {
+     g_form.addOption('u_choice_40','5378','5378 - Programme Section, Kigali');
+     g_form.addOption('u_choice_40','5634','5634 - Adm, Fin and Supply Section, Kigali');
+     g_form.addOption('u_choice_40','6023','6023 - Off of the UNICEF Rep, Kigali');
+     g_form.addOption('u_choice_40','6768','6768 - Operations Section, Kigali');
+}
+if(newValue == '3780') {
+     g_form.addOption('u_choice_40','4646','4646 - Programme Sec., Dubai, Gulf Area');
+     g_form.addOption('u_choice_40','5318','5318 - Programme Section, Riyadh');
+     g_form.addOption('u_choice_40','5327','5327 - Operations Section, Riyadh');
+     g_form.addOption('u_choice_40','5935','5935 - Off of the UNICEF Rep, Riyadh');
+     g_form.addOption('u_choice_40','7084','7084 - Programme Section, Doha, Qatar');
+     g_form.addOption('u_choice_40','7085','7085 - Programme Section, Bahrain');
+     g_form.addOption('u_choice_40','8942','8942 - PrgSec, Abu Dhabi, Gulf Area Off');
+     g_form.addOption('u_choice_40','8943','8943 - PFP Offset Budget - Bahrain');
+     g_form.addOption('u_choice_40','8944','8944 - PFP Offset Budget - Kuwait');
+     g_form.addOption('u_choice_40','9045','9045 - PFP Offset Budget - Dubai, UAE');
+}
+if(newValue == '3810') {
+     g_form.addOption('u_choice_40','2906','2906 - Common Services Section, Senegal');
+     g_form.addOption('u_choice_40','5235','5235 - Programme Section, Dakar');
+     g_form.addOption('u_choice_40','5672','5672 - Supply Section, Dakar');
+     g_form.addOption('u_choice_40','5736','5736 - Off of the UNICEF Rep, Dakar');
+     g_form.addOption('u_choice_40','5737','5737 - Operations Section, Dakar');
+     g_form.addOption('u_choice_40','5738','5738 - Oper - Adm Section, Dakar');
+     g_form.addOption('u_choice_40','5743','5743 - Info Section, Dakar');
+     g_form.addOption('u_choice_40','8867','8867 - Programme Section, Ziguinchor');
+}
+if(newValue == '381R') {
+     g_form.addOption('u_choice_40','2386','2386 - Dakar RO, Guinea Bissau');
+     g_form.addOption('u_choice_40','2736','2736 - WCAR, Outpost Ougadougou');
+     g_form.addOption('u_choice_40','2825','2825 - WCAR, Outpost Bobo-Dioulasso');
+     g_form.addOption('u_choice_40','2961','2961 - WCARO Regional Outpost Offfice, Abuja');
+     g_form.addOption('u_choice_40','3654','3654 - Dakar Regional Office, Abidjan');
+     g_form.addOption('u_choice_40','4927','4927 - WCARO O/P Douala, Cameroon');
+     g_form.addOption('u_choice_40','8456','8456 - Operations Section, WCARO');
+     g_form.addOption('u_choice_40','8457','8457 - Reg Serv - Prog Section, WCARO');
+     g_form.addOption('u_choice_40','8458','8458 - Reg Serv - Oper Sec, WCARO');
+     g_form.addOption('u_choice_40','8459','8459 - Off of the Reg. Director, WCARO');
+     g_form.addOption('u_choice_40','8463','8463 - Reg Serv - Info Sec, WCARO');
+     g_form.addOption('u_choice_40','9059','9059 - Reg Serv - Human Resources, WCARO');
+}
+if(newValue == '3900') {
+     g_form.addOption('u_choice_40','5472','5472 - Programme Section, Freetown');
+     g_form.addOption('u_choice_40','5641','5641 - Off of the UNICEF Rep, Freetown');
+     g_form.addOption('u_choice_40','6273','6273 - Info Section, Freetown');
+     g_form.addOption('u_choice_40','6737','6737 - Operations Section, Freetown');
+     g_form.addOption('u_choice_40','8389','8389 - Programme Section, Kenema');
+     g_form.addOption('u_choice_40','8785','8785 - Programme Section, Makeni');
+}
+if(newValue == '3920') {
+     g_form.addOption('u_choice_40','2234','2234 - Programme Section, Dollow, Somalia');
+     g_form.addOption('u_choice_40','2260','2260 - Operations Sec, Dollow, Somalia');
+     g_form.addOption('u_choice_40','3283','3283 - Programme Sec, Gaalkacyo, Somalia');
+     g_form.addOption('u_choice_40','3284','3284 - Operations Sec., Gaalkacyo, Somalia');
+     g_form.addOption('u_choice_40','3286','3286 - Programme Sec., Wajid, Somalia');
+     g_form.addOption('u_choice_40','3287','3287 - Operations Sec., Wajid, Somalia');
+     g_form.addOption('u_choice_40','3606','3606 - Programme Section, Garoowe, Somalia');
+     g_form.addOption('u_choice_40','3607','3607 - Operations Section, Garoowe, Somalia');
+     g_form.addOption('u_choice_40','4627','4627 - Operations Section, Johwar, Somalia');
+     g_form.addOption('u_choice_40','5292','5292 - Programme Section, Mogadiscio');
+     g_form.addOption('u_choice_40','5352','5352 - Programme Section, Hargeisa');
+     g_form.addOption('u_choice_40','5355','5355 - Operations Section, Mogadiscio');
+     g_form.addOption('u_choice_40','5475','5475 - Programme Section, Nairobi Som Dsk');
+     g_form.addOption('u_choice_40','5525','5525 - Operations Section, Hargeisa');
+     g_form.addOption('u_choice_40','5526','5526 - Operations Section, Baidoa');
+     g_form.addOption('u_choice_40','5527','5527 - Programme Section , Baidoa');
+     g_form.addOption('u_choice_40','5755','5755 - Off of the UNICEF Rep, Mogadiscio');
+     g_form.addOption('u_choice_40','6120','6120 - Operations Section, Bosaso');
+     g_form.addOption('u_choice_40','6398','6398 - Operations Section, Nairobi Som Dsk');
+     g_form.addOption('u_choice_40','6484','6484 - Off of the UNICEF Rep, Nairobi Som Dsk');
+     g_form.addOption('u_choice_40','6502','6502 - Programme Section, Bosaso');
+}
+if(newValue == '3930') {
+     g_form.addOption('u_choice_40','6520','6520 - Programme Section, Pretoria');
+     g_form.addOption('u_choice_40','6521','6521 - Off of the UNICEF Rep, Pretoria');
+     g_form.addOption('u_choice_40','6523','6523 - Operations Section, Pretoria');
+     g_form.addOption('u_choice_40','6746','6746 - Purchasing Section, Pretoria');
+     g_form.addOption('u_choice_40','8927','8927 - Africa Service Unit (O/P), Johannesburg');
+}
+if(newValue == '4020') {
+     g_form.addOption('u_choice_40','2129','2129 - Programme Section, O/P El-Deain, Sudan');
+     g_form.addOption('u_choice_40','2131','2131 - Programme Section, O/P Kosti, Sudan');
+     g_form.addOption('u_choice_40','2132','2132 - Prog Sec,O/P Port Sudan, Red Sea, Sudan');
+     g_form.addOption('u_choice_40','3927','3927 - Programme Section, Kassala, Sudan');
+     g_form.addOption('u_choice_40','3928','3928 - Operations Section, Kassala, Sudan');
+     g_form.addOption('u_choice_40','3930','3930 - Programme Section, Ad Damazine, Sudan');
+     g_form.addOption('u_choice_40','3931','3931 - Operations Section, Ad Damazine, Sudan');
+     g_form.addOption('u_choice_40','3933','3933 - Programme Section, Abyei, Sudan');
+     g_form.addOption('u_choice_40','3934','3934 - Operations Section, Abyei, Sudan');
+     g_form.addOption('u_choice_40','4231','4231 - Programme Sec, Zalinguei, Sudan');
+     g_form.addOption('u_choice_40','5082','5082 - Programme Section, Khartoum');
+     g_form.addOption('u_choice_40','5247','5247 - Programme Section, Kadugli');
+     g_form.addOption('u_choice_40','5296','5296 - Programme Health Section, Khartoum');
+     g_form.addOption('u_choice_40','5297','5297 - WES Section, Khartoum');
+     g_form.addOption('u_choice_40','5499','5499 - Programme Section, El Obeid');
+     g_form.addOption('u_choice_40','5593','5593 - Plan, Monit & Eval, Khartoum');
+     g_form.addOption('u_choice_40','5946','5946 - Off of the UNICEF Rep, Khartoum');
+     g_form.addOption('u_choice_40','5948','5948 - Supply and Logistics Section, Khartoum');
+     g_form.addOption('u_choice_40','5953','5953 - Communication Section, Khartoum');
+     g_form.addOption('u_choice_40','5954','5954 - Field Support Serv, Khartoum');
+     g_form.addOption('u_choice_40','6527','6527 - Programme Section, El Fasher');
+     g_form.addOption('u_choice_40','6733','6733 - Operations Section, Khartoum');
+     g_form.addOption('u_choice_40','8692','8692 - Programme Section, Nyala');
+     g_form.addOption('u_choice_40','8974','8974 - Programme Section , El Geneina');
+}
+if(newValue == '4030') {
+     g_form.addOption('u_choice_40','5238','5238 - Programme Section, Mbabane');
+     g_form.addOption('u_choice_40','6028','6028 - Off of UNICEF Rep, Mbabane, Swaziland');
+     g_form.addOption('u_choice_40','6344','6344 - Operations Section, Mbabane, Swaziland');
+}
+if(newValue == '4040') {
+     g_form.addOption('u_choice_40','2362','2362 - Programme Section, Juba Zone Office');
+     g_form.addOption('u_choice_40','2363','2363 - Operations Section, Juba Zone Office');
+     g_form.addOption('u_choice_40','3455','3455 - Prog/Ops Sec, Bor, So.Sudan');
+     g_form.addOption('u_choice_40','3457','3457 - Prog/Ops Sec, Torit, So.Sudan');
+     g_form.addOption('u_choice_40','3459','3459 - Prog/Ops Sec, Kwajok, So.Sudan');
+     g_form.addOption('u_choice_40','3753','3753 - Programme Sec, Wau, So. Sudan');
+     g_form.addOption('u_choice_40','3754','3754 - Operations Section, Wau, So. Sudan');
+     g_form.addOption('u_choice_40','3777','3777 - Programme Sec, Malakal, So. Sudan');
+     g_form.addOption('u_choice_40','3778','3778 - Operations Section, Malakal, So. Sudan');
+     g_form.addOption('u_choice_40','3779','3779 - Programme Sec, Juba (SSO)');
+     g_form.addOption('u_choice_40','3780','3780 - Operations Sec, Juba (SSO)');
+     g_form.addOption('u_choice_40','3827','3827 - Programme Section, Bentiu, South Sudan');
+     g_form.addOption('u_choice_40','3828','3828 - Operations Section, Bentiu, South Sudan');
+     g_form.addOption('u_choice_40','3909','3909 - Programme Section, Aweil, South Sudan');
+     g_form.addOption('u_choice_40','3910','3910 - Operations Section, Aweil, South Sudan');
+     g_form.addOption('u_choice_40','3911','3911 - Operations Section, Yambio, South Sudan');
+     g_form.addOption('u_choice_40','3912','3912 - Operations Section, Rumbek, South Sudan');
+     g_form.addOption('u_choice_40','3913','3913 - Off of the Director, Juba, South Sudan');
+     g_form.addOption('u_choice_40','3914','3914 - Programme Section, Juba Area');
+     g_form.addOption('u_choice_40','3915','3915 - Common Operations Services (SSO)');
+     g_form.addOption('u_choice_40','6389','6389 - Prog Section, Yambio, South Sudan');
+     g_form.addOption('u_choice_40','8688','8688 - Prog Section, Rumbek, South Sudan');
+}
+if(newValue == '4140') {
+     g_form.addOption('u_choice_40','2425','2425 - Programme Section, Aleppo');
+     g_form.addOption('u_choice_40','2651','2651 - Operations Section , Homs');
+     g_form.addOption('u_choice_40','2653','2653 - Operations Section , Tartous');
+     g_form.addOption('u_choice_40','2655','2655 - Operations Section , Qamishli');
+     g_form.addOption('u_choice_40','2657','2657 - Operations Section , Daraa');
+     g_form.addOption('u_choice_40','2659','2659 - Programme Section, Damascus Hub');
+     g_form.addOption('u_choice_40','2663','2663 - Operations Section , Aleppo');
+     g_form.addOption('u_choice_40','2786','2786 - Programme Section, Homs');
+     g_form.addOption('u_choice_40','2787','2787 - Programme Section, Tartous');
+     g_form.addOption('u_choice_40','2788','2788 - Programme Section, Qamishli');
+     g_form.addOption('u_choice_40','2789','2789 - Programme Section, Daraa');
+     g_form.addOption('u_choice_40','5042','5042 - Programme Section, Damascus');
+     g_form.addOption('u_choice_40','6031','6031 - Off of the UNICEF Rep, Damascus');
+     g_form.addOption('u_choice_40','6769','6769 - Operations Section, Damascus');
+}
+if(newValue == '4150') {
+     g_form.addOption('u_choice_40','2683','2683 - Programme Section, Khujand, Tajikistan');
+     g_form.addOption('u_choice_40','2685','2685 - Programme Section, Qurghonteppa');
+     g_form.addOption('u_choice_40','2690','2690 - Programme Section, Khorog, Tajikistan');
+     g_form.addOption('u_choice_40','2692','2692 - Programme Section, Gharm, Tajikistan');
+     g_form.addOption('u_choice_40','3208','3208 - Operations Sec, Dushanbe, Tajikistan');
+     g_form.addOption('u_choice_40','3209','3209 - Communications Sec, Dushanbe, Tajikistan');
+     g_form.addOption('u_choice_40','3631','3631 - Off of the UNICEF Rep, Dushanbe');
+     g_form.addOption('u_choice_40','6598','6598 - Programme Section , Dushanbe');
+}
+if(newValue == '4200') {
+     g_form.addOption('u_choice_40','5044','5044 - PFP-Offset Budget - Thailand CO');
+     g_form.addOption('u_choice_40','5543','5543 - Programme Section, Bangkok');
+     g_form.addOption('u_choice_40','5809','5809 - Office of the UNICEF Rep, Bangkok');
+     g_form.addOption('u_choice_40','5810','5810 - Information Section, Bangkok');
+}
+if(newValue == '420R') {
+     g_form.addOption('u_choice_40','2990','2990 - Operations Section, Singapore');
+     g_form.addOption('u_choice_40','3452','3452 - Asia-Pacific Shared Services Centre');
+     g_form.addOption('u_choice_40','3829','3829 - Special Location, LOCAL STAFF, EAPRO');
+     g_form.addOption('u_choice_40','5043','5043 - Common Serv - Adm and Fin Sec, Bangkok');
+     g_form.addOption('u_choice_40','5306','5306 - Regl Programme Section, Bangkok');
+     g_form.addOption('u_choice_40','5383','5383 - Regional Services - Human Res, Bangkok');
+     g_form.addOption('u_choice_40','5541','5541 - Regl Prog Planning Section, BKK');
+     g_form.addOption('u_choice_40','5542','5542 - Regl Communication Section, Bangkok');
+     g_form.addOption('u_choice_40','5808','5808 - Office of the Regional Director, Bangkok');
+     g_form.addOption('u_choice_40','6402','6402 - Regional Services - Operations, Bangkok');
+}
+if(newValue == '4230') {
+     g_form.addOption('u_choice_40','5512','5512 - Operations Section, Lome');
+     g_form.addOption('u_choice_40','5723','5723 - Programme Section, Lome');
+     g_form.addOption('u_choice_40','6033','6033 - Off of the UNICEF Rep, Lome');
+}
+if(newValue == '4320') {
+     g_form.addOption('u_choice_40','5598','5598 - Programme Section, Tunis');
+     g_form.addOption('u_choice_40','5599','5599 - Operations Section, Tunis');
+     g_form.addOption('u_choice_40','5780','5780 - Off of the UNICEF Rep, Tunis');
+}
+if(newValue == '4350') {
+     g_form.addOption('u_choice_40','2687','2687 - Programme Section, Gaziantep Turkey');
+     g_form.addOption('u_choice_40','2688','2688 - Operations Section, Gaziantep Turkey');
+     g_form.addOption('u_choice_40','5501','5501 - Programme Section, Ankara');
+     g_form.addOption('u_choice_40','5609','5609 - Operations Sec, Ankara, Turkey');
+     g_form.addOption('u_choice_40','5959','5959 - Off of the UNICEF Rep, Ankara');
+}
+if(newValue == '4360') {
+     g_form.addOption('u_choice_40','6596','6596 - Programme Section, Ashkhabad');
+     g_form.addOption('u_choice_40','9084','9084 - Operations Sec, Ashkhabad, Turkmenistan');
+     g_form.addOption('u_choice_40','9085','9085 - Off of UNICEF Rep, Ashkhabad, Turkmenist');
+}
+if(newValue == '4380') {
+     g_form.addOption('u_choice_40','2231','2231 - Programme Section, Mbarara, Uganda');
+     g_form.addOption('u_choice_40','2232','2232 - Operations Sec, Mbarara, Uganda');
+     g_form.addOption('u_choice_40','4228','4228 - Programme Section, Moroto, Uganda');
+     g_form.addOption('u_choice_40','4644','4644 - Programme Sec. Fort Portal, Uganda');
+     g_form.addOption('u_choice_40','5349','5349 - Operations Section, Kampala');
+     g_form.addOption('u_choice_40','5631','5631 - Programme Section, Kampala');
+     g_form.addOption('u_choice_40','5632','5632 - Communications Section, Kampala');
+     g_form.addOption('u_choice_40','5633','5633 - Off of the UNICEF Rep, Kampala');
+     g_form.addOption('u_choice_40','8961','8961 - Programme Section, Gulu, Uganda');
+}
+if(newValue == '4410') {
+     g_form.addOption('u_choice_40','2162','2162 - Programme Section, Luhansk');
+     g_form.addOption('u_choice_40','2163','2163 - Operations Section, Luhansk');
+     g_form.addOption('u_choice_40','2751','2751 - Operations Section , Kharkiv');
+     g_form.addOption('u_choice_40','2752','2752 - Programme Section, Kharkiv');
+     g_form.addOption('u_choice_40','2802','2802 - Programme Section, Dnepropetrovsk');
+     g_form.addOption('u_choice_40','2803','2803 - Operations Section, Dnepropetrovsk');
+     g_form.addOption('u_choice_40','2876','2876 - Programme Section, Donetsk');
+     g_form.addOption('u_choice_40','2877','2877 - Operations Section, Donetsk');
+     g_form.addOption('u_choice_40','2886','2886 - Outpost Section Bucharest, Romania');
+     g_form.addOption('u_choice_40','2901','2901 - Programme Section, Mariupol');
+     g_form.addOption('u_choice_40','2902','2902 - Operations Section, Mariupol');
+     g_form.addOption('u_choice_40','2904','2904 - Programme Section, Kramatorsk');
+     g_form.addOption('u_choice_40','2905','2905 - Operations Section, Kramatorsk');
+     g_form.addOption('u_choice_40','3632','3632 - Off of the UNICEF Rep, Kiev');
+     g_form.addOption('u_choice_40','6722','6722 - Programme Section, Kiev');
+     g_form.addOption('u_choice_40','7073','7073 - Operations Section, Kiev');
+}
+if(newValue == '4500') {
+     g_form.addOption('u_choice_40','2727','2727 - Programme Section, Alexandria Egypt');
+     g_form.addOption('u_choice_40','3480','3480 - Programme Section, Asyut, Egypt');
+     g_form.addOption('u_choice_40','3481','3481 - Operations Section, Asyut, Egypt');
+     g_form.addOption('u_choice_40','5038','5038 - Programme Section, Cairo');
+     g_form.addOption('u_choice_40','5942','5942 - Off of the UNICEF Rep, Cairo');
+     g_form.addOption('u_choice_40','5943','5943 - Operations Section, Cairo');
+     g_form.addOption('u_choice_40','5945','5945 - Communication Section, Cairo');
+}
+if(newValue == '4550') {
+     g_form.addOption('u_choice_40','2519','2519 - Programme Section, Iringa, Tanzania');
+     g_form.addOption('u_choice_40','2520','2520 - Operations Section, Iringa, Tanzania');
+     g_form.addOption('u_choice_40','2714','2714 - Programme Section, Mbeya, Tanzania');
+     g_form.addOption('u_choice_40','2715','2715 - Operations Section, Mbeya, Tanzania');
+     g_form.addOption('u_choice_40','5058','5058 - Programme Section, Dar Es Salaam');
+     g_form.addOption('u_choice_40','5249','5249 - Operations Section, Dar Es Salaam');
+     g_form.addOption('u_choice_40','5764','5764 - Off of the UNICEF Rep, Dar Es Salaam');
+     g_form.addOption('u_choice_40','5765','5765 - Programme Section , Zanzibar');
+     g_form.addOption('u_choice_40','5768','5768 - Communication Sec, Dar Es Salaam');
+     g_form.addOption('u_choice_40','6436','6436 - Operations Section , Zanzibar');
+     g_form.addOption('u_choice_40','8679','8679 - Programme Section, Kibondo');
+}
+if(newValue == '456B') {
+     g_form.addOption('u_choice_40','3411','3411 - Office of Ombudsperson, OED, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','3734','3734 - Office Of the Executive Director, Geneva');
+     g_form.addOption('u_choice_40','5001','5001 - Off of Executive Director, UNICEF NYHQ');
+}
+if(newValue == '456C') {
+     g_form.addOption('u_choice_40','3307','3307 - Data and Analytics');
+     g_form.addOption('u_choice_40','3768','3768 - Country Programming, Accountability & KM');
+     g_form.addOption('u_choice_40','5123','5123 - Policy, Strategy and Network');
+     g_form.addOption('u_choice_40','6256','6256 - Directors Office, DRP');
+}
+if(newValue == '456D') {
+     g_form.addOption('u_choice_40','2311','2311 - Gender and Rights');
+     g_form.addOption('u_choice_40','2312','2312 - Communication for Development');
+     g_form.addOption('u_choice_40','2313','2313 - Adolescent Development and Participation');
+     g_form.addOption('u_choice_40','2314','2314 - Children with Disability');
+     g_form.addOption('u_choice_40','2325','2325 - Early Childhood Development');
+     g_form.addOption('u_choice_40','2534','2534 - Glob Part to End Violence Against Childr');
+     g_form.addOption('u_choice_40','2757','2757 - Education Secretariat');
+     g_form.addOption('u_choice_40','2758','2758 - Humanitarian Action & Transition');
+     g_form.addOption('u_choice_40','2759','2759 - Human Rights');
+     g_form.addOption('u_choice_40','2760','2760 - WASH Secretariat');
+     g_form.addOption('u_choice_40','2768','2768 - Program Support Unit');
+     g_form.addOption('u_choice_40','2988','2988 - Secretariats, Programme Division');
+     g_form.addOption('u_choice_40','3152','3152 - Child Survival O/P Washington DC');
+     g_form.addOption('u_choice_40','3308','3308 - Social Inclusion and Policy');
+     g_form.addOption('u_choice_40','3903','3903 - Off of Director, PD O/P Geneva');
+     g_form.addOption('u_choice_40','4151','4151 - PD WES O/P Geneva');
+     g_form.addOption('u_choice_40','5004','5004 - Nutrition Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5067','5067 - Water and Sanitation Sec, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5125','5125 - Off of Director-Prog Div, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5376','5376 - Health Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5417','5417 - Education Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','6320','6320 - Child Protection Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','8451','8451 - Civil Society Partnerhips, New York');
+     g_form.addOption('u_choice_40','8747','8747 - HIV/AIDs O/P Washington DC');
+     g_form.addOption('u_choice_40','8760','8760 - HIV/AIDS Sec, Programme Division, NY');
+}
+if(newValue == '456F') {
+     g_form.addOption('u_choice_40','5421','5421 - Off of Emergency Prog, Geneva');
+     g_form.addOption('u_choice_40','6113','6113 - Off of Emergency Prog, UNICEF NYHQ');
+}
+if(newValue == '456G') {
+     g_form.addOption('u_choice_40','3337','3337 - Directors Office, DOC, O/P Rome');
+     g_form.addOption('u_choice_40','3756','3756 - Public Advocacy');
+     g_form.addOption('u_choice_40','3757','3757 - Publications');
+     g_form.addOption('u_choice_40','3759','3759 - Social and Civic Media');
+     g_form.addOption('u_choice_40','3761','3761 - Brand Building');
+     g_form.addOption('u_choice_40','3766','3766 - Media Relations');
+     g_form.addOption('u_choice_40','4052','4052 - Goodwill Ambassador Relations, New York');
+     g_form.addOption('u_choice_40','4551','4551 - Off of the Director - DOC O/P Geneva');
+     g_form.addOption('u_choice_40','5102','5102 - Off of the Dir - Div of Com, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5113','5113 - Media Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5116','5116 - Digital Strategy');
+}
+if(newValue == '456H') {
+     g_form.addOption('u_choice_40','3334','3334 - Gov, UN & Multilateral  Aff -  Dir Off');
+     g_form.addOption('u_choice_40','3335','3335 - Multilateral Sys Analysis incl IFIs');
+     g_form.addOption('u_choice_40','3336','3336 - UN Coherence');
+     g_form.addOption('u_choice_40','5002','5002 - Off of UN and Intergovernmental Affairs');
+}
+if(newValue == '456I') {
+     g_form.addOption('u_choice_40','2675','2675 - Government Partnerships');
+     g_form.addOption('u_choice_40','2676','2676 - Multilateral & Intergovernmental Partner');
+     g_form.addOption('u_choice_40','2677','2677 - Post 2015');
+     g_form.addOption('u_choice_40','2976','2976 - Unicef Geneva Liaison Office, PPD');
+     g_form.addOption('u_choice_40','3858','3858 - PPD, South Korea');
+     g_form.addOption('u_choice_40','5011','5011 - Directors Office, PPD NY');
+     g_form.addOption('u_choice_40','5320','5320 - PPD, Tokyo');
+     g_form.addOption('u_choice_40','6700','6700 - PPD, Brussels');
+}
+if(newValue == '456J') {
+     g_form.addOption('u_choice_40','2261','2261 - Special Location, Abyei Sudan');
+     g_form.addOption('u_choice_40','2364','2364 - Special Location, Comilla Bangladesh');
+     g_form.addOption('u_choice_40','2611','2611 - Special Location, Manila, Philippines');
+     g_form.addOption('u_choice_40','3095','3095 - Special locations, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','3126','3126 - Special Location, Jakarta, Indonesia');
+     g_form.addOption('u_choice_40','3128','3128 - Special Location, Libreville, Gabon');
+     g_form.addOption('u_choice_40','3201','3201 - Special Location, Kuala Lumpur, Malaysia');
+     g_form.addOption('u_choice_40','3202','3202 - Speical Location, Managua, Nicaragua');
+     g_form.addOption('u_choice_40','3214','3214 - Special Location, Bujumbura, Burundi');
+     g_form.addOption('u_choice_40','3278','3278 - Special Location, Algeria');
+     g_form.addOption('u_choice_40','3326','3326 - Special Location, Baidoa, Somalia');
+     g_form.addOption('u_choice_40','3346','3346 - Special Location, Chad');
+     g_form.addOption('u_choice_40','3376','3376 - Special Location, Rumbek, Sudan');
+     g_form.addOption('u_choice_40','3415','3415 - Special Location, Goma, DRC');
+     g_form.addOption('u_choice_40','3476','3476 - Special Location, Banjul, Gambia');
+     g_form.addOption('u_choice_40','3576','3576 - Special Location, Tirania Albania');
+     g_form.addOption('u_choice_40','3726','3726 - Special Location, Bonn, Germany');
+     g_form.addOption('u_choice_40','3727','3727 - Special Location, Chennai, India');
+     g_form.addOption('u_choice_40','3755','3755 - Special Location, Pyongyang, DPRK');
+     g_form.addOption('u_choice_40','3802','3802 - Special Location, Darfur, Sudan');
+     g_form.addOption('u_choice_40','3854','3854 - Special Location, Bosaso, Somalia');
+     g_form.addOption('u_choice_40','3937','3937 - Special Locations, Syria');
+     g_form.addOption('u_choice_40','3951','3951 - Special Location, Juba, Sudan');
+     g_form.addOption('u_choice_40','3953','3953 - IPSAS, IT Investments Division');
+     g_form.addOption('u_choice_40','3978','3978 - Special Location, Skopje, Macedonia');
+     g_form.addOption('u_choice_40','4003','4003 - Special Location, Kathmandu, NEPAL');
+     g_form.addOption('u_choice_40','4028','4028 - UNDP-Bolivia');
+     g_form.addOption('u_choice_40','4126','4126 - Special Location, Sarajevo');
+     g_form.addOption('u_choice_40','4128','4128 - Special Location, Dar-Es-Salaam,Tanzania');
+     g_form.addOption('u_choice_40','4176','4176 - Special Location, Juba, South Sudan');
+     g_form.addOption('u_choice_40','4233','4233 - Special Location, Chisinau, Moldova');
+     g_form.addOption('u_choice_40','4254','4254 - Special Location, Cotonou, Benin');
+     g_form.addOption('u_choice_40','4301','4301 - Special Location, Vienna, Austria');
+     g_form.addOption('u_choice_40','4327','4327 - Special Location, OHCHR, Bogota');
+     g_form.addOption('u_choice_40','4328','4328 - Special Location, UNMIL, Liberia');
+     g_form.addOption('u_choice_40','4329','4329 - Special Location, WMO, Geneva');
+     g_form.addOption('u_choice_40','4379','4379 - UNDP, Freetown Sierra Leone');
+     g_form.addOption('u_choice_40','4426','4426 - Special Location, Vientianne, Laos');
+     g_form.addOption('u_choice_40','4427','4427 - Spl Loc Tehran, Iran');
+     g_form.addOption('u_choice_40','4429','4429 - Special Location- UNFPA, New York');
+     g_form.addOption('u_choice_40','4451','4451 - Special Loc Bosnia, Serbia and Montenegr');
+     g_form.addOption('u_choice_40','4452','4452 - Special Location- Dushanbe, Tajikistan');
+     g_form.addOption('u_choice_40','4476','4476 - Special Loca, Malabo, Equat Guinea');
+     g_form.addOption('u_choice_40','4477','4477 - Special Loc, Johannesburg, So. Africa');
+     g_form.addOption('u_choice_40','4478','4478 - Special Location, Georgetown, Guyana');
+     g_form.addOption('u_choice_40','4501','4501 - Special Location, Guinea Bissau');
+     g_form.addOption('u_choice_40','4504','4504 - Special Location- Kinshasa, Congo DPR');
+     g_form.addOption('u_choice_40','4527','4527 - Special Location, Lapaz Bolivia');
+     g_form.addOption('u_choice_40','4577','4577 - Special Location, Nyala, Sudan');
+     g_form.addOption('u_choice_40','4578','4578 - Special Location, Banda Aceh, Indonesia');
+     g_form.addOption('u_choice_40','4603','4603 - Special Location, UNDP Sudan');
+     g_form.addOption('u_choice_40','4626','4626 - Special Location, Trimcomalee, SriLanka');
+     g_form.addOption('u_choice_40','4702','4702 - Special Location, Namibia');
+     g_form.addOption('u_choice_40','4727','4727 - Special Location, Sierra Leone');
+     g_form.addOption('u_choice_40','4879','4879 - Special Location, Haiti');
+     g_form.addOption('u_choice_40','4901','4901 - Special Location, El Fasher, Sudan');
+     g_form.addOption('u_choice_40','4953','4953 - Special Location, Entebbe Uganda');
+     g_form.addOption('u_choice_40','5012','5012 - Accounts Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5015','5015 - Finance Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5094','5094 - Off of Comptroller, DFAM, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5143','5143 - Budget Section, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5149','5149 - Administrative Management Section');
+     g_form.addOption('u_choice_40','6061','6061 - On Loan, Zagreb');
+     g_form.addOption('u_choice_40','6064','6064 - On Loan, Bangkok');
+     g_form.addOption('u_choice_40','6065','6065 - On Loan, GENEVA');
+     g_form.addOption('u_choice_40','6714','6714 - Special Location, Cairo');
+     g_form.addOption('u_choice_40','6732','6732 - Separation leave with pay, Kathmandu');
+     g_form.addOption('u_choice_40','6738','6738 - Location, Maputo');
+     g_form.addOption('u_choice_40','6744','6744 - Special Location, Lahore, Pakistan');
+     g_form.addOption('u_choice_40','6747','6747 - Separation leave with pay, Addis Ababa');
+     g_form.addOption('u_choice_40','6748','6748 - Separation leave with pay, Khartoum');
+     g_form.addOption('u_choice_40','6749','6749 - Special Location, Beijing, China');
+     g_form.addOption('u_choice_40','6752','6752 - Location, Amman');
+     g_form.addOption('u_choice_40','6753','6753 - Special Location, Hanoi, Vietnam');
+     g_form.addOption('u_choice_40','6754','6754 - Separation leave with pay, Jerusalem');
+     g_form.addOption('u_choice_40','6785','6785 - Separation leave with pay, San Salvador');
+     g_form.addOption('u_choice_40','6786','6786 - Location, Dar Es Salaam');
+     g_form.addOption('u_choice_40','6787','6787 - Separation leave with pay, GENEVA');
+     g_form.addOption('u_choice_40','6791','6791 - Location, COPENHAGEN');
+     g_form.addOption('u_choice_40','6800','6800 - Special Location, Kingston, Jamaica');
+     g_form.addOption('u_choice_40','7001','7001 - Location Alma Ata');
+     g_form.addOption('u_choice_40','7002','7002 - Location, Lilongwe');
+     g_form.addOption('u_choice_40','7003','7003 - Location, Abidjan');
+     g_form.addOption('u_choice_40','7004','7004 - Location, London');
+     g_form.addOption('u_choice_40','7013','7013 - Location Somalia Based in Nairobi');
+     g_form.addOption('u_choice_40','7021','7021 - Special Leave, East Jerusalem');
+     g_form.addOption('u_choice_40','7022','7022 - Leave with Pay, Baghdad, Iraq');
+     g_form.addOption('u_choice_40','7024','7024 - Location, Tripoli, Libya');
+     g_form.addOption('u_choice_40','7027','7027 - Special Location, Antananarivo, Madagasc');
+     g_form.addOption('u_choice_40','7035','7035 - Location, Belgrade, Serbia');
+     g_form.addOption('u_choice_40','7038','7038 - Location, Pretoria, South Africa');
+     g_form.addOption('u_choice_40','7039','7039 - Location, Tokyo, Japan');
+     g_form.addOption('u_choice_40','7040','7040 - Location, Khartoum Sudan');
+     g_form.addOption('u_choice_40','7041','7041 - Separation Leave, Lokichoggio, Nairobi');
+     g_form.addOption('u_choice_40','7042','7042 - Location, Kampala, Uganda');
+     g_form.addOption('u_choice_40','7048','7048 - Spl Location, Phnom Penh, Cambodia');
+     g_form.addOption('u_choice_40','7049','7049 - Location, Kigali, Rwanda');
+     g_form.addOption('u_choice_40','7055','7055 - Location, Dhaka, Bangladesh');
+     g_form.addOption('u_choice_40','7060','7060 - Location, Somalia');
+     g_form.addOption('u_choice_40','7076','7076 - Location, Mazar-I-Sharif, Afghanistan');
+     g_form.addOption('u_choice_40','7080','7080 - Location, Mumbai, India');
+     g_form.addOption('u_choice_40','7081','7081 - Special Location WCARO Dakar');
+     g_form.addOption('u_choice_40','7082','7082 - Special Location, Beirut');
+     g_form.addOption('u_choice_40','8000','8000 - Special Location, Yaounde, Cameroon');
+     g_form.addOption('u_choice_40','8231','8231 - Location, GENEVA');
+     g_form.addOption('u_choice_40','8358','8358 - Separation leave with pay, Dhaka');
+     g_form.addOption('u_choice_40','8370','8370 - Special Loc, Addis Ababa, Ethiopia');
+     g_form.addOption('u_choice_40','8371','8371 - Location, Nairobi');
+     g_form.addOption('u_choice_40','8375','8375 - Special Location,Praia, CaboVerde');
+     g_form.addOption('u_choice_40','8376','8376 - Location, Freetown');
+     g_form.addOption('u_choice_40','8378','8378 - Separation leave with pay, Florence');
+     g_form.addOption('u_choice_40','8382','8382 - Reimbursable loan, Thailand');
+     g_form.addOption('u_choice_40','8383','8383 - Location, Islamabad');
+     g_form.addOption('u_choice_40','8391','8391 - Location, New Delhi, India');
+     g_form.addOption('u_choice_40','8392','8392 - Separation leave, Paris');
+     g_form.addOption('u_choice_40','8393','8393 - Separation leave with pay, Guinea Bissau');
+     g_form.addOption('u_choice_40','8394','8394 - Spl Location, Guatemala City, Guatemala');
+     g_form.addOption('u_choice_40','8400','8400 - Separation leave with pay, Brazil');
+     g_form.addOption('u_choice_40','8432','8432 - Separation leave with pay, Quito');
+     g_form.addOption('u_choice_40','8433','8433 - Special Location, Thimpu');
+     g_form.addOption('u_choice_40','8439','8439 - Separation leave with pay, Accra');
+     g_form.addOption('u_choice_40','8460','8460 - Location, Brussels, Belgium');
+     g_form.addOption('u_choice_40','8500','8500 - Sep Leave with Pay, Bridgetown, Barbados');
+     g_form.addOption('u_choice_40','8554','8554 - Location, Kinshasa');
+     g_form.addOption('u_choice_40','8557','8557 - Separation leave with pay, Brazzaville');
+     g_form.addOption('u_choice_40','8559','8559 - Separation leave with pay, Baghdad');
+     g_form.addOption('u_choice_40','8662','8662 - Separation leave with pay, Tunisia');
+     g_form.addOption('u_choice_40','8665','8665 - Location, Turin, Italy');
+     g_form.addOption('u_choice_40','8673','8673 - Location, Pristina');
+     g_form.addOption('u_choice_40','8693','8693 - Separation leave with pay, Libya');
+     g_form.addOption('u_choice_40','8696','8696 - Location, Washington DC');
+     g_form.addOption('u_choice_40','8697','8697 - Location, Dili, Timor-Leste');
+     g_form.addOption('u_choice_40','8699','8699 - Reimbursable loan, Kinshasa');
+     g_form.addOption('u_choice_40','8701','8701 - Loan, Pristina');
+     g_form.addOption('u_choice_40','8702','8702 - Loan, Ethiopia');
+     g_form.addOption('u_choice_40','8703','8703 - Loan, Nigeria');
+     g_form.addOption('u_choice_40','8710','8710 - Special Location, Damascus');
+     g_form.addOption('u_choice_40','8714','8714 - Separation leave, Hanoi');
+     g_form.addOption('u_choice_40','8715','8715 - Leave with Pay, Jamaica');
+     g_form.addOption('u_choice_40','8717','8717 - Leave with pay, Niamey');
+     g_form.addOption('u_choice_40','8727','8727 - Loan, Iraq');
+     g_form.addOption('u_choice_40','8807','8807 - Location, Panama');
+     g_form.addOption('u_choice_40','8868','8868 - Location, Paris');
+     g_form.addOption('u_choice_40','8869','8869 - Location, Windhoek');
+     g_form.addOption('u_choice_40','8870','8870 - Location, Maastricht');
+     g_form.addOption('u_choice_40','8871','8871 - Location, Rome');
+     g_form.addOption('u_choice_40','8872','8872 - Location, Mexico City');
+     g_form.addOption('u_choice_40','8873','8873 - Location, Asmara');
+     g_form.addOption('u_choice_40','8874','8874 - Location, Gaberone');
+     g_form.addOption('u_choice_40','8875','8875 - Location, Maseru');
+     g_form.addOption('u_choice_40','8885','8885 - Location, Bujumbura');
+     g_form.addOption('u_choice_40','8886','8886 - Location, Ngara');
+     g_form.addOption('u_choice_40','8888','8888 - Location, Yangon, Myanmar');
+     g_form.addOption('u_choice_40','8889','8889 - Location, Ujung-Pandang');
+     g_form.addOption('u_choice_40','8890','8890 - Location. Dar Es Salaam');
+     g_form.addOption('u_choice_40','8913','8913 - Location, Kabul');
+     g_form.addOption('u_choice_40','8914','8914 - Location, Warsaw');
+     g_form.addOption('u_choice_40','8915','8915 - Location, Ashkhabad, Turkmenistan');
+     g_form.addOption('u_choice_40','8916','8916 - Special Location, Niamey, Niger');
+     g_form.addOption('u_choice_40','8919','8919 - Special Location, Moscow');
+     g_form.addOption('u_choice_40','8924','8924 - Special Location, Lubumbashi, DR Congo');
+     g_form.addOption('u_choice_40','8925','8925 - Special Location, Brasilia, Brazil');
+     g_form.addOption('u_choice_40','8926','8926 - Special Location, Abuja, Nigeria');
+     g_form.addOption('u_choice_40','8929','8929 - Special Location, Ankara, Turkey');
+     g_form.addOption('u_choice_40','8940','8940 - Special Location, Conakry, Guinea');
+     g_form.addOption('u_choice_40','8941','8941 - Special Location, Pristina, Kosovo');
+     g_form.addOption('u_choice_40','8945','8945 - Special Location, Bangkok, Thailand');
+     g_form.addOption('u_choice_40','8946','8946 - Special Location, Tamale, Ghana');
+     g_form.addOption('u_choice_40','8959','8959 - Location, Podjorica, Serbia & Montenegro');
+     g_form.addOption('u_choice_40','8964','8964 - Special Location, Luanda, Angola');
+     g_form.addOption('u_choice_40','8965','8965 - Special Location, Dohuk, Iraq');
+     g_form.addOption('u_choice_40','8966','8966 - Special Location, Kandahar, Afghanistan');
+     g_form.addOption('u_choice_40','8970','8970 - Special Location, Nairobi, Kenya');
+     g_form.addOption('u_choice_40','8971','8971 - Special Location, Muscat, Oman');
+     g_form.addOption('u_choice_40','8972','8972 - Spec Loc. Port Louis in Antananarivo');
+     g_form.addOption('u_choice_40','8996','8996 - Special Location, Monrovia, Liberia');
+     g_form.addOption('u_choice_40','8998','8998 - Special Location, Accra, Ghana');
+     g_form.addOption('u_choice_40','8999','8999 - Special Location, Erbil, Iraq');
+     g_form.addOption('u_choice_40','9041','9041 - Special location, ESARO Nairobi, Kenya');
+     g_form.addOption('u_choice_40','9049','9049 - Spl Loc, Port Moresby, Papua N. Guinea');
+     g_form.addOption('u_choice_40','9050','9050 - Special Location, Dili, Timor-Leste');
+     g_form.addOption('u_choice_40','9051','9051 - Special Loc., Sanaa, Rep of Yemen');
+     g_form.addOption('u_choice_40','9052','9052 - Spl Loc, CEE/CIS Geneva, Switzerland');
+     g_form.addOption('u_choice_40','9058','9058 - Special Location, Bhubaneshwar, India');
+     g_form.addOption('u_choice_40','9060','9060 - Special Location, Santiago, Chile');
+     g_form.addOption('u_choice_40','9083','9083 - Special Location, Rabat, Morocco');
+     g_form.addOption('u_choice_40','9902','9902 - Location, Harare');
+}
+if(newValue == '456K') {
+     g_form.addOption('u_choice_40','*   ','*    - Special Location, Saudi Arabia');
+     g_form.addOption('u_choice_40','2133','2133 - Spl Loc, Bangassou, Central African Rep');
+     g_form.addOption('u_choice_40','2143','2143 - Strategic Planning and Operations');
+     g_form.addOption('u_choice_40','2145','2145 - HQ Liaison, Insurance and Compensation');
+     g_form.addOption('u_choice_40','2350','2350 - Special Location, Nicosia, Cyprus');
+     g_form.addOption('u_choice_40','2400','2400 - Special Location, Mogadiscio Somalia');
+     g_form.addOption('u_choice_40','2569','2569 - Special Location, Gaziantep, Turkey');
+     g_form.addOption('u_choice_40','2575','2575 - Special Location, Bangui CAR');
+     g_form.addOption('u_choice_40','2636','2636 - Special Location, Istanbul Turkey');
+     g_form.addOption('u_choice_40','2661','2661 - Special Location, Bamako Mali');
+     g_form.addOption('u_choice_40','2756','2756 - Special Location Budapest, Hungary');
+     g_form.addOption('u_choice_40','2800','2800 - Special Location Paris,  France');
+     g_form.addOption('u_choice_40','2838','2838 - Special Location, Beirut Lebanon');
+     g_form.addOption('u_choice_40','2911','2911 - Special Location, San Jose Costa Rica');
+     g_form.addOption('u_choice_40','2925','2925 - Special Location, NY');
+     g_form.addOption('u_choice_40','2939','2939 - Emergencies & Surge Recruitment Section');
+     g_form.addOption('u_choice_40','2940','2940 - Regular Recruitment Section');
+     g_form.addOption('u_choice_40','2975','2975 - Location, San Salvador, El Salvador');
+     g_form.addOption('u_choice_40','3333','3333 - New Emerging Talent Sec, DHR');
+     g_form.addOption('u_choice_40','3408','3408 - Mobility and Staffing Section');
+     g_form.addOption('u_choice_40','3409','3409 - Staff Well Being Section');
+     g_form.addOption('u_choice_40','3762','3762 - Mobility and Staffing Unit');
+     g_form.addOption('u_choice_40','3763','3763 - HR Customer Relationships & HR Effective');
+     g_form.addOption('u_choice_40','3834','3834 - New Emerging Talent Unit, Managua');
+     g_form.addOption('u_choice_40','3835','3835 - New Emerging Talent Unit, Bujumbura');
+     g_form.addOption('u_choice_40','3982','3982 - HR Business Partner, Programme & Policy');
+     g_form.addOption('u_choice_40','3983','3983 - HR Business Partner, Operations');
+     g_form.addOption('u_choice_40','3984','3984 - HR Business Partner, External Rel & COD');
+     g_form.addOption('u_choice_40','3985','3985 - HR Business Partner, Emergencies');
+     g_form.addOption('u_choice_40','3986','3986 - NY Staff Association');
+     g_form.addOption('u_choice_40','4302','4302 - Special Location, UNDP, New York');
+     g_form.addOption('u_choice_40','5013','5013 - Office of the Director-DHR, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5162','5162 - Performance Management and Career Dev');
+     g_form.addOption('u_choice_40','5163','5163 - Human Resources Services and Systems');
+     g_form.addOption('u_choice_40','5171','5171 - Global Staff Association, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','8379','8379 - General lien - New York');
+     g_form.addOption('u_choice_40','8381','8381 - Non-reimbursable loan, P&S NY');
+     g_form.addOption('u_choice_40','8423','8423 - UNICEF Staff News M&A');
+     g_form.addOption('u_choice_40','8424','8424 - UNICEF Staff News P&S');
+     g_form.addOption('u_choice_40','8447','8447 - Policy & Admin Law Sec, DHR, UNICEF NYHQ');
+}
+if(newValue == '456L') {
+     g_form.addOption('u_choice_40','2857','2857 - Strategy Risk Management & Govenance');
+     g_form.addOption('u_choice_40','2858','2858 - Solutions Center and Support');
+     g_form.addOption('u_choice_40','2859','2859 - Platfrom and Srvice Delivery');
+     g_form.addOption('u_choice_40','2860','2860 - ICT Business Relationship Management-FRG');
+     g_form.addOption('u_choice_40','2867','2867 - ICT Business Relationship Management-Par');
+     g_form.addOption('u_choice_40','2868','2868 - ICT Business Relationship Management-Prg');
+     g_form.addOption('u_choice_40','2869','2869 - ICT Business Relationship Management-Man');
+     g_form.addOption('u_choice_40','3329','3329 - Plans, Polices and Prod Assurance, ITD');
+     g_form.addOption('u_choice_40','3410','3410 - Operations Supp Sec, ITSS, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','4631','4631 - Administrative Services, ITSSD NY');
+     g_form.addOption('u_choice_40','5008','5008 - ICTD Directors Office');
+     g_form.addOption('u_choice_40','5097','5097 - IT Applications Cross Functional Service');
+     g_form.addOption('u_choice_40','5156','5156 - IT Operations and Services');
+     g_form.addOption('u_choice_40','5158','5158 - Information Services Sec, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','5159','5159 - IT KMS (Internet Services)');
+     g_form.addOption('u_choice_40','6102','6102 - Technical Architecture Sec, UNICEF NYHQ');
+     g_form.addOption('u_choice_40','8441','8441 - ITSS Applications Functional Services');
+     g_form.addOption('u_choice_40','8799','8799 - Centralized Communications, ITD NY');
+     g_form.addOption('u_choice_40','8800','8800 - ITSS KMS (BI)');
+     g_form.addOption('u_choice_40','8801','8801 - IT Security, ITSS, NY');
+}
+if(newValue == '456N') {
+     g_form.addOption('u_choice_40','5085','5085 - Internal Audit & Investigation');
+}
+if(newValue == '456Q') {
+     g_form.addOption('u_choice_40','3241','3241 - Field Support Coordination Section');
+     g_form.addOption('u_choice_40','4378','4378 - GSSC Project Section');
+}
+if(newValue == '456R') {
+     g_form.addOption('u_choice_40','2681','2681 - Field Results Group Section');
+}
+if(newValue == '456S') {
+     g_form.addOption('u_choice_40','5089','5089 - Office of the Sec of the ExBoard Section');
+}
+if(newValue == '456T') {
+     g_form.addOption('u_choice_40','2155','2155 - End Violence against Children Secretaria');
+     g_form.addOption('u_choice_40','2156','2156 - Education cannot Wait Secretariat');
+     g_form.addOption('u_choice_40','2158','2158 - END VIOLENCE AGAINST CHILDREN');
+     g_form.addOption('u_choice_40','2159','2159 - EDUCATION CANT WAIT');
+}
+if(newValue == '4590') {
+     g_form.addOption('u_choice_40','2554','2554 - Programme Section, Dori Burkina Faso');
+     g_form.addOption('u_choice_40','2555','2555 - Operations Section, Dori Burkina Faso');
+     g_form.addOption('u_choice_40','2811','2811 - Outpost Section Dori, Burkina Faso');
+     g_form.addOption('u_choice_40','5049','5049 - Programme Section, Ouagadougou');
+     g_form.addOption('u_choice_40','5718','5718 - Off of the UNICEF Rep, Ouagadougou');
+     g_form.addOption('u_choice_40','6160','6160 - Operations Section, Ouagadougou');
+}
+if(newValue == '4620') {
+     g_form.addOption('u_choice_40','3377','3377 - PFP Offset Budget, Uruguay');
+     g_form.addOption('u_choice_40','6034','6034 - Programme Section, Uruguay');
+     g_form.addOption('u_choice_40','8768','8768 - Off of the UNICEF Rep, Uruguay');
+     g_form.addOption('u_choice_40','8769','8769 - Operations Section, Uruguay');
+     g_form.addOption('u_choice_40','8770','8770 - Communications Section, Uruguay');
+}
+if(newValue == '4630') {
+     g_form.addOption('u_choice_40','3630','3630 - Off of the UNICEF Rep,Tashkent');
+     g_form.addOption('u_choice_40','6597','6597 - Programme Section , Tashkent');
+     g_form.addOption('u_choice_40','8997','8997 - Operations Section, Tashkent');
+}
+if(newValue == '4710') {
+     g_form.addOption('u_choice_40','3676','3676 - Office of the Rep, Caracas');
+     g_form.addOption('u_choice_40','6390','6390 - Programme Section, Caracas');
+     g_form.addOption('u_choice_40','6446','6446 - Planning Section, Caracas');
+     g_form.addOption('u_choice_40','6547','6547 - Operations Section, Caracas');
+     g_form.addOption('u_choice_40','8883','8883 - PFP Offset Budget, Caracas');
+}
+if(newValue == '4920') {
+     g_form.addOption('u_choice_40','2401','2401 - Yemen CO, O/P Amman Jordan');
+     g_form.addOption('u_choice_40','2451','2451 - Operations Section, Mukalah');
+     g_form.addOption('u_choice_40','2452','2452 - Programme Section, Mukalah');
+     g_form.addOption('u_choice_40','3821','3821 - Programme Section, Saada, Yemen');
+     g_form.addOption('u_choice_40','3822','3822 - Operations Section, Saada, Yemen');
+     g_form.addOption('u_choice_40','3832','3832 - Programme Section, Seyoun, Yemen');
+     g_form.addOption('u_choice_40','3833','3833 - Operations Section, Seyoun, Yemen');
+     g_form.addOption('u_choice_40','3994','3994 - Programme Section, Harad Yemen');
+     g_form.addOption('u_choice_40','3995','3995 - Operations Section, Harad');
+     g_form.addOption('u_choice_40','4877','4877 - Programme Sec, Taizz, Yemen');
+     g_form.addOption('u_choice_40','4878','4878 - Operations Sec, Taizz, Yemen');
+     g_form.addOption('u_choice_40','5083','5083 - Programme Section, Sanaa');
+     g_form.addOption('u_choice_40','5956','5956 - Off of the UNICEF Rep, Sanaa');
+     g_form.addOption('u_choice_40','6739','6739 - Operations Section, Sanaa');
+     g_form.addOption('u_choice_40','7043','7043 - Programme Section, Aden, Yemen');
+     g_form.addOption('u_choice_40','7046','7046 - Programme Section, Hodaidah, Yemen');
+     g_form.addOption('u_choice_40','7047','7047 - Programme Section, Ibb, Yemen');
+     g_form.addOption('u_choice_40','7050','7050 - Programme Section, Dhale, Yemen');
+}
+if(newValue == '4980') {
+     g_form.addOption('u_choice_40','5357','5357 - Programme Section, Lusaka');
+     g_form.addOption('u_choice_40','5522','5522 - Operations Section, Lusaka');
+     g_form.addOption('u_choice_40','5769','5769 - Off of the UNICEF Rep, Lusaka');
+}
+if(newValue == '5070') {
+     g_form.addOption('u_choice_40','2391','2391 - Dhaka City, Bangladesh');
+     g_form.addOption('u_choice_40','3770','3770 - Comminication for Development');
+     g_form.addOption('u_choice_40','3771','3771 - Nutrition Section');
+     g_form.addOption('u_choice_40','3772','3772 - Prog Health Section');
+     g_form.addOption('u_choice_40','3774','3774 - Programme Section, Bogra, Bangladesh');
+     g_form.addOption('u_choice_40','3775','3775 - Operations Section, Bogra, Banladesh');
+     g_form.addOption('u_choice_40','3783','3783 - Programme Section, Khulna, Bangladesh');
+     g_form.addOption('u_choice_40','3784','3784 - Operations Section, Khulna, Banladesh');
+     g_form.addOption('u_choice_40','3786','3786 - Programme Section, Chittagong, Banglades');
+     g_form.addOption('u_choice_40','3787','3787 - Operations Section, Chittagong, Banlades');
+     g_form.addOption('u_choice_40','5069','5069 - Dep Dir Off - Prog Coordination, Dhaka');
+     g_form.addOption('u_choice_40','5070','5070 - Rep Office - Prog Coordination, Dhaka');
+     g_form.addOption('u_choice_40','5256','5256 - Prog Coord - Health & Nutrition, Dhaka');
+     g_form.addOption('u_choice_40','5257','5257 - Prog - Health & Nutrition Section, Dhaka');
+     g_form.addOption('u_choice_40','5286','5286 - Prog - Field Operations Section, Dhaka');
+     g_form.addOption('u_choice_40','5288','5288 - Prog Policy & Monitoring Sec, Dhaka');
+     g_form.addOption('u_choice_40','5335','5335 - Oper - Fin & Accounts Section, Dhaka');
+     g_form.addOption('u_choice_40','5601','5601 - Prog Comm and Info Section, Dhaka');
+     g_form.addOption('u_choice_40','5606','5606 - Prog - Field Operations Section, Barisal');
+     g_form.addOption('u_choice_40','5608','5608 - Prog - Field Oper Section, Mymensing');
+     g_form.addOption('u_choice_40','5656','5656 - Oper - Supply and Procurement Sec, Dhaka');
+     g_form.addOption('u_choice_40','5660','5660 - Prog Coordination - Education, Dhaka');
+     g_form.addOption('u_choice_40','5661','5661 - Prog - Child Dev. & Edu Sec, Dhaka');
+     g_form.addOption('u_choice_40','5662','5662 - Prog Coord - Water & Env Sanit, Dhaka');
+     g_form.addOption('u_choice_40','5816','5816 - Representatives Office, Dhaka');
+     g_form.addOption('u_choice_40','5820','5820 - Oper - Administrative Serv, Dhaka');
+     g_form.addOption('u_choice_40','5829','5829 - Oper - Human Resources Management, Dhaka');
+     g_form.addOption('u_choice_40','6450','6450 - Oper - Info Technology Section, Dhaka');
+     g_form.addOption('u_choice_40','8761','8761 - Prog - Water and Env Sanit Sec, Dhaka');
+     g_form.addOption('u_choice_40','8762','8762 - Planning, Monitoring and Eval Sec, Dhaka');
+     g_form.addOption('u_choice_40','8763','8763 - Communication Section, Dhaka');
+     g_form.addOption('u_choice_40','8764','8764 - Operations Cluster, Dhaka');
+     g_form.addOption('u_choice_40','8840','8840 - Programme Section, Rangamati');
+     g_form.addOption('u_choice_40','8851','8851 - Programme Section, Rangpur');
+     g_form.addOption('u_choice_40','8857','8857 - Programme Section, Sylet, Bangladesh');
+}
+if(newValue == '5150') {
+     g_form.addOption('u_choice_40','6005','6005 - Programme Section, Pyongyang');
+     g_form.addOption('u_choice_40','6555','6555 - Office of the UNICEF Rep, Pyongyang');
+     g_form.addOption('u_choice_40','6750','6750 - Operations Section, Pyongyang');
+}
+if(newValue == '5200') {
+     g_form.addOption('u_choice_40','5072','5072 - Plng & Coordination Office, Hanoi');
+     g_form.addOption('u_choice_40','5659','5659 - Prog/Oper Section, Ho Chi Minh Cty');
+     g_form.addOption('u_choice_40','5831','5831 - Office of the UNICEF Rep, Hanoi');
+     g_form.addOption('u_choice_40','5832','5832 - Operations Section, Hanoi');
+     g_form.addOption('u_choice_40','6353','6353 - Programme Section, Hanoi');
+     g_form.addOption('u_choice_40','6451','6451 - Communication & Info Section, Hanoi');
+     g_form.addOption('u_choice_40','6557','6557 - Oper/Supply Section, Hanoi');
+     g_form.addOption('u_choice_40','8092','8092 - Water & Env. Sanitation, Hanoi');
+}
+if(newValue == '5640') {
+     g_form.addOption('u_choice_40','6012','6012 - Off of the UNICEF Rep, Chisinau');
+     g_form.addOption('u_choice_40','6672','6672 - Programme Section, Chisinau');
+     g_form.addOption('u_choice_40','6673','6673 - Operations Section, Chisinau');
+}
+if(newValue == '5750') {
+     g_form.addOption('u_choice_40','2175','2175 - Communication and Marketing');
+     g_form.addOption('u_choice_40','2176','2176 - Private Sector Engagement');
+     g_form.addOption('u_choice_40','2177','2177 - Deputy Director - PSE and MSP & Pl');
+     g_form.addOption('u_choice_40','2178','2178 - Strategic Planning, Info & Inv Funds');
+     g_form.addOption('u_choice_40','2179','2179 - Global Philanthropy');
+     g_form.addOption('u_choice_40','2180','2180 - Market Development');
+     g_form.addOption('u_choice_40','2200','2200 - Strategic Planning');
+     g_form.addOption('u_choice_40','2201','2201 - Strategic Info & Inv Funds');
+     g_form.addOption('u_choice_40','2302','2302 - Corporate Research & Due Diligence');
+     g_form.addOption('u_choice_40','2303','2303 - Advocacy and Innovative Partnerships');
+     g_form.addOption('u_choice_40','2511','2511 - Country Office Development and Support');
+     g_form.addOption('u_choice_40','3051','3051 - PFP Budget');
+     g_form.addOption('u_choice_40','3101','3101 - Global Digital');
+     g_form.addOption('u_choice_40','3352','3352 - Childrens Rights and Business');
+     g_form.addOption('u_choice_40','3353','3353 - Child Rights Advocacy & Educ for Develop');
+     g_form.addOption('u_choice_40','3519','3519 - Market Knowledge');
+     g_form.addOption('u_choice_40','3541','3541 - Fundraising Services');
+     g_form.addOption('u_choice_40','3542','3542 - Programme Services');
+     g_form.addOption('u_choice_40','3543','3543 - Deputy Director NatCom Relations');
+     g_form.addOption('u_choice_40','3544','3544 - Communication');
+     g_form.addOption('u_choice_40','3545','3545 - Relationship Team III');
+     g_form.addOption('u_choice_40','3546','3546 - Governance');
+     g_form.addOption('u_choice_40','3679','3679 - Deputy Director Cards & Products');
+     g_form.addOption('u_choice_40','3680','3680 - Specialist Fundraising Services O/P NY');
+     g_form.addOption('u_choice_40','3681','3681 - PDP O/P New York');
+     g_form.addOption('u_choice_40','3979','3979 - Corporate Social Responsibility,New York');
+     g_form.addOption('u_choice_40','3980','3980 - Relationship Team IV');
+     g_form.addOption('u_choice_40','3987','3987 - Common Services Geneva, Finance');
+     g_form.addOption('u_choice_40','3988','3988 - Common Services Geneva, Info Comm Tech');
+     g_form.addOption('u_choice_40','3989','3989 - Common Services Geneva, Human Resources');
+     g_form.addOption('u_choice_40','4027','4027 - Relationship Team III, O/P New York');
+     g_form.addOption('u_choice_40','4552','4552 - Fundraising O/P Tokyo');
+     g_form.addOption('u_choice_40','6772','6772 - Corporate and Foundation Fundraising, NY');
+     g_form.addOption('u_choice_40','6773','6773 - Relationship Team IV, O/P New York');
+     g_form.addOption('u_choice_40','8112','8112 - Production Management, New York');
+     g_form.addOption('u_choice_40','8119','8119 - Marketing and Business Development');
+     g_form.addOption('u_choice_40','8147','8147 - Procurement');
+     g_form.addOption('u_choice_40','8149','8149 - Quality Management Standards & Systems');
+     g_form.addOption('u_choice_40','8151','8151 - Finance');
+     g_form.addOption('u_choice_40','8155','8155 - Warehouse, Huningue');
+     g_form.addOption('u_choice_40','8176','8176 - Production Management, Geneva');
+     g_form.addOption('u_choice_40','8177','8177 - Logistics, Geneva');
+     g_form.addOption('u_choice_40','8396','8396 - Partnership V (Geneva)');
+     g_form.addOption('u_choice_40','8398','8398 - Relationship Team I');
+     g_form.addOption('u_choice_40','8716','8716 - Global Alliance for Vaccines & Imm., GVA');
+     g_form.addOption('u_choice_40','8723','8723 - Supply Chain');
+     g_form.addOption('u_choice_40','8724','8724 - Relationship Team II');
+     g_form.addOption('u_choice_40','8796','8796 - Common Services Geneva, Operations');
+     g_form.addOption('u_choice_40','8880','8880 - Directors Office');
+     g_form.addOption('u_choice_40','8881','8881 - Deputy Director Operations & Finance');
+     g_form.addOption('u_choice_40','8939','8939 - Deputy Director Central Fundraising');
+     g_form.addOption('u_choice_40','8947','8947 - Corporate Fundraising');
+     g_form.addOption('u_choice_40','8975','8975 - Spl Location, Local Posts, GENEVA REG');
+}
+if(newValue == '575R') {
+     g_form.addOption('u_choice_40','2151','2151 - Sofia, Bulgaria (O/P)');
+     g_form.addOption('u_choice_40','2152','2152 - Bucharest, Romania (O/P)');
+     g_form.addOption('u_choice_40','2426','2426 - UNICEF One Response Team, Geneva');
+     g_form.addOption('u_choice_40','2454','2454 - National Response Coord, O/P Vienna');
+     g_form.addOption('u_choice_40','2455','2455 - National Response Coord, OP Berlin');
+     g_form.addOption('u_choice_40','2456','2456 - National Response Coord, O/P Athens');
+     g_form.addOption('u_choice_40','2457','2457 - National Response Coord, O/P Rome');
+     g_form.addOption('u_choice_40','2458','2458 - National Response Coord, O/P Ljubljana');
+     g_form.addOption('u_choice_40','2486','2486 - CEE/CIS Regional Office O/P Brussels');
+     g_form.addOption('u_choice_40','2942','2942 - CEE/CIS Regional Outpost Office, Almaty');
+     g_form.addOption('u_choice_40','2943','2943 - CEE/CIS Regional Outpost Office,Istanbul');
+     g_form.addOption('u_choice_40','3855','3855 - Head of Office, Moscow');
+     g_form.addOption('u_choice_40','3991','3991 - Advocacy, Comm and Partnerships, Moscow');
+     g_form.addOption('u_choice_40','3992','3992 - Fundraising, Moscow');
+     g_form.addOption('u_choice_40','6708','6708 - Off of the Regional Director, CEECIS');
+     g_form.addOption('u_choice_40','6709','6709 - Regional Communication, CEECIS');
+     g_form.addOption('u_choice_40','6710','6710 - Regional Operations, CEECIS');
+     g_form.addOption('u_choice_40','6711','6711 - Regional Programme Planning & M&E,CEECIS');
+     g_form.addOption('u_choice_40','6712','6712 - Regional Advisors, CEECIS');
+}
+if(newValue == '6110') {
+     g_form.addOption('u_choice_40','6154','6154 - Programme Section, Belize City, Belize');
+     g_form.addOption('u_choice_40','8402','8402 - Off of UNICEF Rep, Belize City, Belize');
+     g_form.addOption('u_choice_40','9078','9078 - Operations Section, Belize City, Belize');
+}
+if(newValue == '6260') {
+     g_form.addOption('u_choice_40','2565','2565 - Programme Section, Bulawayo');
+     g_form.addOption('u_choice_40','2566','2566 - Operations Section, Bulawayo');
+     g_form.addOption('u_choice_40','5341','5341 - Off of the UNICEF Rep, Harare');
+     g_form.addOption('u_choice_40','5342','5342 - Programme Section, Harare');
+     g_form.addOption('u_choice_40','6694','6694 - Operations Section, Harare');
+}
+if(newValue == '6350') {
+     g_form.addOption('u_choice_40','5464','5464 - Programme Section, Muscat');
+     g_form.addOption('u_choice_40','5465','5465 - Off of the UNICEF Rep, Muscat');
+     g_form.addOption('u_choice_40','5596','5596 - Operations Section, Muscat');
+}
+if(newValue == '6490') {
+     g_form.addOption('u_choice_40','6018','6018 - Office of the UNICEF Rep, Port Moresby');
+     g_form.addOption('u_choice_40','6121','6121 - Programme Section, Port Moresby');
+     g_form.addOption('u_choice_40','6123','6123 - Operations Section, Port Moresby');
+}
+if(newValue == '6620') {
+     g_form.addOption('u_choice_40','5229','5229 - Programme Section, Moroni');
+     g_form.addOption('u_choice_40','5983','5983 - Off of the UNICEF Rep, Moroni');
+     g_form.addOption('u_choice_40','6336','6336 - Operations Section, Moroni');
+}
+if(newValue == '6690') {
+     g_form.addOption('u_choice_40','5409','5409 - Programme Section, Djibouti');
+     g_form.addOption('u_choice_40','5427','5427 - Operations Section, Djibouti');
+     g_form.addOption('u_choice_40','5988','5988 - Off of the UNICEF Rep, Djibouti');
+}
+if(newValue == '6810') {
+     g_form.addOption('u_choice_40','3341','3341 - Programme Sec, Kuito Bie, Angola');
+     g_form.addOption('u_choice_40','3342','3342 - Operations Sec, Kuito Bie, Angola');
+     g_form.addOption('u_choice_40','4210','4210 - Programme Sec, Kunene, Angola');
+     g_form.addOption('u_choice_40','4211','4211 - Operations Sec., Kunene, Angola');
+     g_form.addOption('u_choice_40','5310','5310 - Programme Section, Luanda');
+     g_form.addOption('u_choice_40','5732','5732 - Off of the UNICEF Rep, Luanda');
+     g_form.addOption('u_choice_40','5733','5733 - Supply Section, Luanda');
+     g_form.addOption('u_choice_40','5735','5735 - Operations Section, Luanda');
+     g_form.addOption('u_choice_40','6311','6311 - Communications Section, Luanda');
+     g_form.addOption('u_choice_40','6420','6420 - Programme Section, Lubango');
+     g_form.addOption('u_choice_40','9030','9030 - Programme Section, Malange');
+     g_form.addOption('u_choice_40','9032','9032 - Programme Section, Luena');
+}
+if(newValue == '6830') {
+     g_form.addOption('u_choice_40','5729','5729 - Programme Section, Sao Tome');
+     g_form.addOption('u_choice_40','6302','6302 - Adm, Fin and Supply Section, Sao Tome');
+}
+if(newValue == '6850') {
+     g_form.addOption('u_choice_40','5739','5739 - Programme Section , Bissau');
+     g_form.addOption('u_choice_40','5997','5997 - Off of the UNICEF Rep, Bissau');
+     g_form.addOption('u_choice_40','6223','6223 - Operations Section, Bissau');
+}
+if(newValue == '6890') {
+     g_form.addOption('u_choice_40','5358','5358 - Programme Section, Maputo');
+     g_form.addOption('u_choice_40','5524','5524 - Operations Section, Maputo');
+     g_form.addOption('u_choice_40','5775','5775 - Off of the UNICEF Rep, Maputo');
+}
+if(newValue == '6980') {
+     g_form.addOption('u_choice_40','5924','5924 - Programme Section, Windhoek');
+     g_form.addOption('u_choice_40','6014','6014 - Off of the UNICEF Rep, Windhoek');
+     g_form.addOption('u_choice_40','6406','6406 - Operations Section, Windhoek');
+}
+if(newValue == '7050') {
+     g_form.addOption('u_choice_40','8809','8809 - Off of UNICEF Rep, E. Jerusalem');
+     g_form.addOption('u_choice_40','8810','8810 - Operations Sec, E. Jerusalem');
+     g_form.addOption('u_choice_40','8811','8811 - Programme Sec, E. Jerusalem');
+     g_form.addOption('u_choice_40','8930','8930 - Prog Section, Hebron');
+     g_form.addOption('u_choice_40','8934','8934 - Prog Section, Nablus');
+     g_form.addOption('u_choice_40','8938','8938 - Programme Section, Rafah');
+     g_form.addOption('u_choice_40','9002','9002 - Programme Section, Gaza');
+     g_form.addOption('u_choice_40','9003','9003 - Programme Section, Ramallah');
+     g_form.addOption('u_choice_40','9064','9064 - Prog Sec, Khan Yunis');
+}
+if(newValue == '7060') {
+     g_form.addOption('u_choice_40','8556','8556 - Programme Section, Dili');
+     g_form.addOption('u_choice_40','8664','8664 - Office of the UNICEF Rep, Dili');
+     g_form.addOption('u_choice_40','8686','8686 - Operations Section, Dili');
+}
+if(newValue == '8950') {
+     g_form.addOption('u_choice_40','4776','4776 - Programme Sec, Podgorica, Montenegro');
+     g_form.addOption('u_choice_40','4777','4777 - Operation Sec, Podgorica, Montenegro');
+     g_form.addOption('u_choice_40','4801','4801 - Off of the UNICEF Rep, Podgorica');
+}
+if(newValue == '8970') {
+     g_form.addOption('u_choice_40','3451','3451 - PFP Offset Budget, Serbia');
+     g_form.addOption('u_choice_40','6037','6037 - Programme Section, Belgrade, Serbia');
+     g_form.addOption('u_choice_40','6540','6540 - Operations Section, Belgrade, Serbia');
+     g_form.addOption('u_choice_40','6707','6707 - Communications Sec, Belgrade, Serbia');
+     g_form.addOption('u_choice_40','8814','8814 - Off of the UNICEF Rep, Belgrade');
+}
+if(newValue == '8971') {
+     g_form.addOption('u_choice_40','4204','4204 - ProgSec, Zvecan, Kosovo UNSCR 1244');
+     g_form.addOption('u_choice_40','6706','6706 - Programme Section, Pristina. Offc');
+     g_form.addOption('u_choice_40','8668','8668 - Operations Section, Pristina');
+}
+	
+	
+
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-16 11:28:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a2f29c30f9b32005fddcdbce1050e20</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Org_unit_choice_list_with_BA_filter</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MDM Vendor" source="x_90286_mdm_vendor">73b83f660f1332005fddcdbce1050ef3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MDM Vendor">73b83f660f1332005fddcdbce1050ef3</sys_scope>
+        <sys_update_name>sys_script_client_7a2f29c30f9b32005fddcdbce1050e20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-19 07:40:42</sys_updated_on>
+        <table>x_90286_mdm_vendor_vendor</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

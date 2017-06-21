@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_account_holders_name</field>
+        <global>true</global>
+        <messages/>
+        <name>BA_Choice_List</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+g_form.clearOptions('u_business_area_of_requestor');
+	
+g_form.addOption('u_business_area_of_requestor','0060','0060 - Afghanistan');
+g_form.addOption('u_business_area_of_requestor','0090','0090 - Albania');
+g_form.addOption('u_business_area_of_requestor','0120','0120 - Algeria');
+g_form.addOption('u_business_area_of_requestor','0240','0240 - Argentina');
+g_form.addOption('u_business_area_of_requestor','0260','0260 - Armenia');
+g_form.addOption('u_business_area_of_requestor','0310','0310 - Azerbaijan');
+g_form.addOption('u_business_area_of_requestor','0420','0420 - Barbados');
+g_form.addOption('u_business_area_of_requestor','0490','0490 - Bhutan');
+g_form.addOption('u_business_area_of_requestor','0510','0510 - Bolivia');
+g_form.addOption('u_business_area_of_requestor','0520','0520 - Botswana');
+g_form.addOption('u_business_area_of_requestor','0530','0530 - Bosnia and Herzegovina');
+g_form.addOption('u_business_area_of_requestor','0540','0540 - Brazil');
+g_form.addOption('u_business_area_of_requestor','0570','0570 - Bulgaria');
+g_form.addOption('u_business_area_of_requestor','0600','0600 - Myanmar');
+g_form.addOption('u_business_area_of_requestor','0610','0610 - Burundi');
+g_form.addOption('u_business_area_of_requestor','0630','0630 - Belarus');
+g_form.addOption('u_business_area_of_requestor','0660','0660 - Cambodia');
+g_form.addOption('u_business_area_of_requestor','0690','0690 - Republic of Cameroon');
+g_form.addOption('u_business_area_of_requestor','0750','0750 - Central African Republic');
+g_form.addOption('u_business_area_of_requestor','0780','0780 - Sri Lanka');
+g_form.addOption('u_business_area_of_requestor','0810','0810 - Chad');
+g_form.addOption('u_business_area_of_requestor','0840','0840 - Chile');
+g_form.addOption('u_business_area_of_requestor','0860','0860 - China');
+g_form.addOption('u_business_area_of_requestor','0930','0930 - Colombia');
+g_form.addOption('u_business_area_of_requestor','0990','0990 - Democratic Republic of Congo');
+g_form.addOption('u_business_area_of_requestor','1020','1020 - Costa Rica');
+g_form.addOption('u_business_area_of_requestor','1030','1030 - Croatia');
+g_form.addOption('u_business_area_of_requestor','1050','1050 - Cuba');
+g_form.addOption('u_business_area_of_requestor','1170','1170 - Benin');
+g_form.addOption('u_business_area_of_requestor','1200','1200 - Denmark');
+g_form.addOption('u_business_area_of_requestor','1260','1260 - Dominican Republic');
+g_form.addOption('u_business_area_of_requestor','1350','1350 - Ecuador');
+g_form.addOption('u_business_area_of_requestor','1380','1380 - El Salvador');
+g_form.addOption('u_business_area_of_requestor','1390','1390 - Equatorial Guinea');
+g_form.addOption('u_business_area_of_requestor','1410','1410 - Ethiopia');
+g_form.addOption('u_business_area_of_requestor','1420','1420 - Eritrea');
+g_form.addOption('u_business_area_of_requestor','1430','1430 - Fiji (Pacific Islands)');
+g_form.addOption('u_business_area_of_requestor','1530','1530 - Gabon');
+g_form.addOption('u_business_area_of_requestor','1560','1560 - Gambia');
+g_form.addOption('u_business_area_of_requestor','1600','1600 - Georgia');
+g_form.addOption('u_business_area_of_requestor','1620','1620 - Ghana');
+g_form.addOption('u_business_area_of_requestor','1680','1680 - Guatemala');
+g_form.addOption('u_business_area_of_requestor','1770','1770 - Guinea');
+g_form.addOption('u_business_area_of_requestor','1800','1800 - Guyana');
+g_form.addOption('u_business_area_of_requestor','1830','1830 - Haiti');
+g_form.addOption('u_business_area_of_requestor','1860','1860 - Honduras');
+g_form.addOption('u_business_area_of_requestor','1950','1950 - Global Shared Service Center');
+g_form.addOption('u_business_area_of_requestor','2040','2040 - India');
+g_form.addOption('u_business_area_of_requestor','2070','2070 - Indonesia');
+g_form.addOption('u_business_area_of_requestor','2100','2100 - Iran');
+g_form.addOption('u_business_area_of_requestor','2130','2130 - Iraq');
+g_form.addOption('u_business_area_of_requestor','2220','2220 - Office of Research, Italy');
+g_form.addOption('u_business_area_of_requestor','2250','2250 - Cote D&aposIvoire');
+g_form.addOption('u_business_area_of_requestor','2280','2280 - Jamaica');
+g_form.addOption('u_business_area_of_requestor','2340','2340 - Jordan');
+g_form.addOption('u_business_area_of_requestor','234R','234R - MENA, Jordan');
+g_form.addOption('u_business_area_of_requestor','2390','2390 - Kazakhstan');
+g_form.addOption('u_business_area_of_requestor','2400','2400 - Kenya');
+g_form.addOption('u_business_area_of_requestor','240B','240B - Office of Global Innovation');
+g_form.addOption('u_business_area_of_requestor','240R','240R - ESARO, Kenya');
+g_form.addOption('u_business_area_of_requestor','2450','2450 - Republic of Kyrgyzstan');
+g_form.addOption('u_business_area_of_requestor','2460','2460 - Lao People&aposs Dem Rep.');
+g_form.addOption('u_business_area_of_requestor','2490','2490 - Lebanon');
+g_form.addOption('u_business_area_of_requestor','2520','2520 - Lesotho');
+g_form.addOption('u_business_area_of_requestor','2550','2550 - Liberia');
+g_form.addOption('u_business_area_of_requestor','2580','2580 - Libya');
+g_form.addOption('u_business_area_of_requestor','2660','2660 - Macedonia');
+g_form.addOption('u_business_area_of_requestor','2670','2670 - Madagascar');
+g_form.addOption('u_business_area_of_requestor','2690','2690 - Malawi');
+g_form.addOption('u_business_area_of_requestor','2700','2700 - Malaysia');
+g_form.addOption('u_business_area_of_requestor','2740','2740 - Maldives');
+g_form.addOption('u_business_area_of_requestor','2760','2760 - Mali');
+g_form.addOption('u_business_area_of_requestor','2820','2820 - Mauritania');
+g_form.addOption('u_business_area_of_requestor','2850','2850 - Mexico');
+g_form.addOption('u_business_area_of_requestor','2880','2880 - Mongolia');
+g_form.addOption('u_business_area_of_requestor','2910','2910 - Morocco');
+g_form.addOption('u_business_area_of_requestor','2970','2970 - Nepal');
+g_form.addOption('u_business_area_of_requestor','297R','297R - ROSA, Nepal');
+g_form.addOption('u_business_area_of_requestor','3120','3120 - Nicaragua');
+g_form.addOption('u_business_area_of_requestor','3180','3180 - Niger');
+g_form.addOption('u_business_area_of_requestor','3210','3210 - Nigeria');
+g_form.addOption('u_business_area_of_requestor','3300','3300 - Pakistan');
+g_form.addOption('u_business_area_of_requestor','3330','3330 - Panama');
+g_form.addOption('u_business_area_of_requestor','333R','333R - LACRO, Panama');
+g_form.addOption('u_business_area_of_requestor','3360','3360 - Paraguay');
+g_form.addOption('u_business_area_of_requestor','3380','3380 - Congo');
+g_form.addOption('u_business_area_of_requestor','3390','3390 - Peru');
+g_form.addOption('u_business_area_of_requestor','3420','3420 - Philippines');
+g_form.addOption('u_business_area_of_requestor','3660','3660 - Romania');
+g_form.addOption('u_business_area_of_requestor','3750','3750 - Rwanda');
+g_form.addOption('u_business_area_of_requestor','3780','3780 - Saudi Arabia');
+g_form.addOption('u_business_area_of_requestor','3810','3810 - Senegal');
+g_form.addOption('u_business_area_of_requestor','381R','381R - WCARO, Senegal');
+g_form.addOption('u_business_area_of_requestor','3900','3900 - Sierra Leone');
+g_form.addOption('u_business_area_of_requestor','3920','3920 - Somalia');
+g_form.addOption('u_business_area_of_requestor','3930','3930 - South Africa');
+g_form.addOption('u_business_area_of_requestor','4020','4020 - Sudan');
+g_form.addOption('u_business_area_of_requestor','4030','4030 - Swaziland');
+g_form.addOption('u_business_area_of_requestor','4040','4040 - South Sudan');
+g_form.addOption('u_business_area_of_requestor','4140','4140 - Syria');
+g_form.addOption('u_business_area_of_requestor','4150','4150 - Tajikistan');
+g_form.addOption('u_business_area_of_requestor','4200','4200 - Thailand');
+g_form.addOption('u_business_area_of_requestor','420R','420R - EAPRO, Thailand');
+g_form.addOption('u_business_area_of_requestor','4230','4230 - Togo');
+g_form.addOption('u_business_area_of_requestor','4320','4320 - Tunisia');
+g_form.addOption('u_business_area_of_requestor','4350','4350 - Turkey');
+g_form.addOption('u_business_area_of_requestor','4360','4360 - Rep. of Turkmenistan');
+g_form.addOption('u_business_area_of_requestor','4380','4380 - Uganda');
+g_form.addOption('u_business_area_of_requestor','4410','4410 - Ukraine');
+g_form.addOption('u_business_area_of_requestor','4500','4500 - Egypt');
+g_form.addOption('u_business_area_of_requestor','4550','4550 - United Rep. of Tanzania');
+g_form.addOption('u_business_area_of_requestor','456B','456B - Executive Director&aposs Office');
+g_form.addOption('u_business_area_of_requestor','456C','456C - Data, Research and Policy');
+g_form.addOption('u_business_area_of_requestor','456D','456D - Programme Division');
+g_form.addOption('u_business_area_of_requestor','456F','456F - Office of Emergency Prog.');
+g_form.addOption('u_business_area_of_requestor','456G','456G - Division of Communication');
+g_form.addOption('u_business_area_of_requestor','456H','456H - Gov. & Multilateral  Affairs');
+g_form.addOption('u_business_area_of_requestor','456I','456I - Public Partnerships Division');
+g_form.addOption('u_business_area_of_requestor','456J','456J - Div. of Finance & Admin Mgmt');
+g_form.addOption('u_business_area_of_requestor','456K','456K - Division of Human Resources');
+g_form.addOption('u_business_area_of_requestor','456L','456L - InfoTech Solutions & Services');
+g_form.addOption('u_business_area_of_requestor','456N','456N - Int. Audit & Invest (OIAI)');
+g_form.addOption('u_business_area_of_requestor','456O','456O - Evaluation Office');
+g_form.addOption('u_business_area_of_requestor','456Q','456Q - GSSC Project');
+g_form.addOption('u_business_area_of_requestor','456R','456R - Field Results Group Office');
+g_form.addOption('u_business_area_of_requestor','456S','456S - OSEB');
+g_form.addOption('u_business_area_of_requestor','456T','456T - UNICEF Hosted Funds');
+g_form.addOption('u_business_area_of_requestor','4590','4590 - Burkina Faso');
+g_form.addOption('u_business_area_of_requestor','4620','4620 - Uruguay');
+g_form.addOption('u_business_area_of_requestor','4630','4630 - Rep of Uzbekistan');
+g_form.addOption('u_business_area_of_requestor','4710','4710 - Venezuela');
+g_form.addOption('u_business_area_of_requestor','4920','4920 - Yemen');
+g_form.addOption('u_business_area_of_requestor','4980','4980 - Zambia');
+g_form.addOption('u_business_area_of_requestor','5070','5070 - Bangladesh');
+g_form.addOption('u_business_area_of_requestor','5150','5150 - DP Republic of Korea');
+g_form.addOption('u_business_area_of_requestor','5200','5200 - Vietnam');
+g_form.addOption('u_business_area_of_requestor','5640','5640 - Moldova');
+g_form.addOption('u_business_area_of_requestor','5750','5750 - Switzerland');
+g_form.addOption('u_business_area_of_requestor','575C','575C - Geneva Common Services');
+g_form.addOption('u_business_area_of_requestor','575R','575R - CEE/CIS');
+g_form.addOption('u_business_area_of_requestor','6110','6110 - Belize');
+g_form.addOption('u_business_area_of_requestor','6260','6260 - Zimbabwe');
+g_form.addOption('u_business_area_of_requestor','6350','6350 - Oman');
+g_form.addOption('u_business_area_of_requestor','6490','6490 - Papua New Guinea');
+g_form.addOption('u_business_area_of_requestor','6620','6620 - Comoros');
+g_form.addOption('u_business_area_of_requestor','6690','6690 - Djibouti');
+g_form.addOption('u_business_area_of_requestor','6810','6810 - Angola');
+g_form.addOption('u_business_area_of_requestor','6820','6820 - Cabo Verde');
+g_form.addOption('u_business_area_of_requestor','6830','6830 - Sao Tome & Principe');
+g_form.addOption('u_business_area_of_requestor','6850','6850 - Guinea Bissau');
+g_form.addOption('u_business_area_of_requestor','6890','6890 - Republic of Mozambique');
+g_form.addOption('u_business_area_of_requestor','6980','6980 - Namibia');
+g_form.addOption('u_business_area_of_requestor','7050','7050 - Palestine, State of');
+g_form.addOption('u_business_area_of_requestor','7060','7060 - Timor-Leste');
+g_form.addOption('u_business_area_of_requestor','8950','8950 - Republic of Montenegro');
+g_form.addOption('u_business_area_of_requestor','8970','8970 - Serbia');
+g_form.addOption('u_business_area_of_requestor','8971','8971 - Kosovo');
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-16 10:27:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12832d430f9b32005fddcdbce1050e6d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BA_Choice_List</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MDM Vendor" source="x_90286_mdm_vendor">73b83f660f1332005fddcdbce1050ef3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MDM Vendor">73b83f660f1332005fddcdbce1050ef3</sys_scope>
+        <sys_update_name>sys_script_client_12832d430f9b32005fddcdbce1050e6d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-16 10:30:56</sys_updated_on>
+        <table>x_90286_mdm_vendor_vendor</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

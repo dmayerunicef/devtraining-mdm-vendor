@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Vendor" max_length="40" name="x_90286_mdm_vendor_vendor" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Account holder's name" max_length="40" name="u_account_holders_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Account type" max_length="40" name="u_account_type" type="string">
+            <choice>
+                <element label="01 - Current/Checking account" sequence="0" value="01"/>
+                <element label="02 - Saving account" sequence="1" value="02"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Bank account currency" max_length="40" name="u_bank_account_currency" type="string">
+            <choice>
+                <element label="KPW01 KPW" sequence="0" value="KPW01"/>
+                <element label="JOD Jordanian Dinar" sequence="1" value="JOD"/>
+                <element label="USD US Dollar" sequence="2" value="USD"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Bank account number" max_length="40" name="u_bank_account_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Business area of requestor" mandatory="true" max_length="40" name="u_business_area_of_requestor" type="string">
+            <choice>
+                <element label="0090 Albania" sequence="0" value="0090"/>
+                <element label="456K Division of Human Resources" sequence="1" value="456K"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Org Unit" max_length="255" name="u_choice_40" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="u_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City of birth" max_length="40" name="u_city_of_birth" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_request_type" dependent_on_field="u_request_type" label="Company name" max_length="40" name="u_company_name" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact person's email address" max_length="40" name="u_contact_persons_email_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Country" max_length="40" name="u_country" type="string">
+            <choice>
+                <element label="Albania" sequence="0" value="009"/>
+                <element label="Hungary" sequence="1" value="195"/>
+                <element label="USA" sequence="2" value="456"/>
+                <element label="United Kingdom" sequence="3" value="453"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Country of birth" max_length="40" name="u_country_of_birth" type="string">
+            <choice>
+                <element label="393 South Africa" sequence="0" value="393"/>
+                <element label="456 USA" sequence="1" value="456"/>
+                <element label="009 Albania" sequence="2" value="009"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_currency_49" type="currency"/>
+        <element label="New Data Structure" max_length="800" name="u_data_structure_47" type="data_structure"/>
+        <element label="New Data Structure" max_length="800" name="u_data_structure_48" type="data_structure"/>
+        <element label="Date of birth" max_length="40" name="u_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Email address (payment advice)" max_length="40" name="u_email_address_payment_advice" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Fax" max_length="40" name="u_fax" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
+        <element label="Former staff member?" max_length="40" name="u_former_staff_member" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element label="F" sequence="0" value="F"/>
+                <element label="M" sequence="1" value="M"/>
+            </choice>
+        </element>
+        <element label="Start Date" max_length="40" name="u_glide_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="House number" max_length="40" name="u_house_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IBAN" max_length="40" name="u_iban" type="string"/>
+        <element label="New Icon" max_length="100" name="u_icon_51" type="icon"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Marital status" max_length="40" name="u_marital_status" type="string">
+            <choice>
+                <element label="Single" sequence="0" value="Single"/>
+                <element label="Married" sequence="1" value="Married"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Mobile phone" max_length="40" name="u_mobile_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name of bank" max_length="40" name="u_name_of_bank" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name of contact" max_length="40" name="u_name_of_contact" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="BCLNTU" label="Payment method" mandatory="true" max_length="40" name="u_payment_method" type="string">
+            <choice>
+                <element label="BCLNTU" sequence="0" value="BCLNTU"/>
+                <element label="T Bank Transfer" sequence="1" value="T"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Payment terms" mandatory="true" max_length="40" name="u_payment_terms" type="string">
+            <choice>
+                <element label="Z002 (4) equal quarterly payments" sequence="0" value="Z002"/>
+                <element label="Z003 Reimbursement of expenses" sequence="1" value="Z003"/>
+                <element label="0001 Payable immediately Due net" sequence="2" value="0001"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Personnel Area" max_length="255" name="u_personnel_area" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Personnel number" max_length="40" name="u_personnel_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PO Box" max_length="40" name="u_po_box" type="string"/>
+        <element label="Prepayment enabled" max_length="40" name="u_prepayment_enabled" type="boolean"/>
+        <element label="New Reference" max_length="32" name="u_reference_50" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Create" sequence="0" value="create"/>
+                <element label="Update" sequence="1" value="update"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Routing No / Branch code / Bank key" max_length="40" name="u_routing_no_branch_code_bank_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Search term" mandatory="true" max_length="40" name="u_search_term" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="State / Province / Region" max_length="2" name="u_state_province_region" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street name" max_length="40" name="u_street_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_request_type" dependent_on_field="u_request_type" label="Vendor number" max_length="40" name="u_svendor_number" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="SWIFT code" max_length="40" name="u_swift_code" type="string"/>
+        <element attributes="base_start=true" label="New Table Name" max_length="80" name="u_table_name_46" type="table_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Tax ID" max_length="40" name="u_tax_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Telephone" max_length="40" name="u_telephone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor Account Group" mandatory="true" max_length="40" name="u_vendor_account_group" type="string">
+            <choice>
+                <element label="ZCON Individual Consultants" sequence="0" value="ZCON"/>
+                <element label="ZCNT Institutional Contractors" sequence="1" value="ZCNT"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Web site" max_length="40" name="u_web_site" type="string"/>
+    </element>
+</database>
